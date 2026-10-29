@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mise · Restaurant POS and kitchen display</title>
+  <meta name="description" content="Mise runs the floor and the kitchen from one tablet. Servers send orders straight to the right station, and the kitchen tells them when it's up.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23E9A24A'/%3E%3Cpath d='M10 9h12v14l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5-2 1.5z' fill='%23120E0B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" data-nav>
+    <div class="nav-inner">
+      <a class="logo" href="#top" aria-label="Mise, home">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M10 9h12v14l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5-2 1.5z"/></svg>
+        <span class="logo-word">Mise</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#features">Product</a>
+        <a href="#stories">Stories</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm" href="#login">Log in</a>
+        <a class="btn btn-primary btn-sm" href="#demo"><span class="btn-label"><span>Book a demo</span></span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" data-hero>
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-scatter" aria-hidden="true">
+        <figure class="tile tile-sm tile-tl" data-depth="0.6"><img src="images/wooden-spoons.jpg" alt=""></figure>
+        <figure class="tile tile-sm tile-tr" data-depth="0.6"><img src="images/ladles.jpg" alt=""></figure>
+        <figure class="tile tile-lg tile-bl" data-depth="1"><img src="images/flames.jpg" alt=""></figure>
+        <figure class="tile tile-lg tile-br" data-depth="1"><img src="images/pots-steam.jpg" alt=""></figure>
+
+        <div class="chip-float chip-seat" data-depth="0.8">
+          <i class="ph ph-armchair"></i>
+          <span><b>Table 7</b> seated · 4 guests</span>
+        </div>
+        <div class="chip-float chip-86" data-depth="0.8">
+          <i class="ph ph-prohibit"></i>
+          <span><b>Short rib</b> 86'd on every screen</span>
+        </div>
+      </div>
+
+      <div class="hero-copy" data-hero-copy>
+        <p class="eyebrow">Point of sale + kitchen display</p>
+        <h1>
+          <span class="h1-sans">Run the floor and the kitchen</span>
+          <span class="h1-serif">from one tablet.</span>
+        </h1>
+        <p class="lead">Servers send orders straight to the right station. The kitchen tells them when it's up.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#demo"><span class="btn-label"><span>Book a demo</span></span></a>
+          <a class="btn btn-ghost" href="#how"><i class="ph ph-play-circle"></i>Watch a ticket move</a>
+        </div>
+      </div>
+
+      <!-- The product: kitchen display on a tablet -->
+      <div class="device" data-device>
+        <div class="device-screen kds" role="img" aria-label="Mise kitchen display at 7:42 PM showing four open tickets. Table 3 is late at 12 minutes 30 seconds.">
+          <div class="kds-bar">
+            <div class="kds-title">
+              <svg class="logo-mark logo-mark-sm" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M10 9h12v14l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5-2 1.5z"/></svg>
+              <span>Kitchen</span>
+            </div>
+            <div class="kds-filters">
+              <span class="kds-filter is-active">All <b>9</b></span>
+              <span class="kds-filter">Grill <b>4</b></span>
+              <span class="kds-filter">Fry <b>2</b></span>
+              <span class="kds-filter">Cold <b>3</b></span>
+            </div>
+            <div class="kds-meta"><span>Avg <b class="num">8:40</b></span><span class="num">7:42 PM</span></div>
+          </div>
+          <div class="kds-tickets">
+            <article class="ticket is-new">
+              <header><span class="ticket-id">T12</span><span class="ticket-time num">2:14</span></header>
+              <p class="ticket-sub">Dine-in · 4 guests · Ana</p>
+              <ul>
+                <li><b>2</b> Short rib <em>no horseradish</em></li>
+                <li><b>1</b> Burrata</li>
+                <li><b>1</b> Fries <em>side aioli</em></li>
+              </ul>
+              <span class="ticket-bump">Bump</span>
+            </article>
+            <article class="ticket is-warn">
+              <header><span class="ticket-id">T7</span><span class="ticket-time num">6:48</span></header>
+              <p class="ticket-sub">Dine-in · 2 guests · Marco</p>
+              <ul>
+                <li><b>1</b> Branzino <span class="flag"><i class="ph-bold ph-warning"></i>Nut allergy</span></li>
+                <li><b>2</b> Caesar</li>
+              </ul>
+              <span class="ticket-bump">Bump</span>
+            </article>
+            <article class="ticket is-warn">
+              <header><span class="ticket-id">#4821</span><span class="ticket-time num">9:15</span></header>
+              <p class="ticket-sub">Delivery · pickup 7:50</p>
+              <ul>
+                <li><b>1</b> Smash burger</li>
+                <li><b>2</b> Fries</li>
+                <li><b>1</b> Lemonade</li>
+              </ul>
+              <span class="ticket-bump">Bump</span>
+            </article>
+            <article class="ticket is-late">
+              <header><span class="ticket-id">T3</span><span class="ticket-time num">12:30</span></header>
+              <p class="ticket-sub">Dine-in · 5 guests · Ana</p>
+              <ul>
+                <li><b>1</b> Ribeye <em>mid-rare</em></li>
+                <li><b>2</b> Mash</li>
+              </ul>
+              <span class="ticket-bump">Bump</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO RIBBON -->
+    <section class="ribbon" aria-labelledby="ribbon-title">
+      <div class="ribbon-head">
+        <p id="ribbon-title">On the line in 2,400 kitchens</p>
+        <button class="ribbon-toggle" type="button" data-marquee-toggle aria-pressed="false" aria-label="Pause the logo ribbon">
+          <i class="ph ph-pause"></i>
+        </button>
+      </div>
+      <div class="marquee" data-marquee>
+        <ul class="marquee-track">
+          <li class="wm wm-serif">Osteria Brava</li>
+          <li class="wm wm-caps"><i class="ph-fill ph-fish"></i>Harbor Fish Co.</li>
+          <li class="wm wm-bold">Lucky Pot</li>
+          <li class="wm wm-serif-i">Ground Floor</li>
+          <li class="wm wm-caps"><i class="ph-fill ph-pepper"></i>Taqueria Sol</li>
+          <li class="wm wm-bold">BRUNO'S</li>
+          <li class="wm wm-serif">Little Fern</li>
+          <li class="wm wm-caps"><i class="ph-fill ph-bowl-food"></i>Noodle Yard</li>
+        </ul>
+        <ul class="marquee-track" aria-hidden="true">
+          <li class="wm wm-serif">Osteria Brava</li>
+          <li class="wm wm-caps"><i class="ph-fill ph-fish"></i>Harbor Fish Co.</li>
+          <li class="wm wm-bold">Lucky Pot</li>
+          <li class="wm wm-serif-i">Ground Floor</li>
+          <li class="wm wm-caps"><i class="ph-fill ph-pepper"></i>Taqueria Sol</li>
+          <li class="wm wm-bold">BRUNO'S</li>
+          <li class="wm wm-serif">Little Fern</li>
+          <li class="wm wm-caps"><i class="ph-fill ph-bowl-food"></i>Noodle Yard</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how" aria-labelledby="how-title">
+      <div class="how-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="how-head" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">One tap from the table <span class="serif-i">to the pass.</span></h2>
+          <p class="lead">Servers stay on the floor. The kitchen sees every ticket the second it's sent, sorted by station.</p>
+        </div>
+
+        <div class="how-flow">
+          <figure class="how-card how-card-1" data-reveal>
+            <div class="how-img"><img src="images/server-notepad.jpg" alt="A server holding an order pad while a guest reads the menu" loading="lazy"></div>
+            <div class="how-ui ui-order">
+              <p class="ui-kicker">Table 12 · Ana</p>
+              <p><b>2</b> Short rib <em>no horseradish</em></p>
+              <p><b>1</b> Burrata</p>
+              <span class="ui-send"><i class="ph-bold ph-paper-plane-tilt"></i>Send to kitchen</span>
+            </div>
+            <figcaption><h3>Take it at the table</h3><p>Modifiers and allergies go in with the order.</p></figcaption>
+          </figure>
+
+          <figure class="how-card how-card-2" data-reveal>
+            <div class="how-img"><img src="images/cook-station.jpg" alt="A cook at his station with a kitchen screen on the wall behind him" loading="lazy"></div>
+            <div class="how-ui ui-station">
+              <span class="ui-station-name"><i class="ph-fill ph-fire"></i>Grill</span>
+              <span class="num">T12 · 0:42</span>
+            </div>
+            <figcaption><h3>Fire it to the right station</h3><p>Each station sees only what it cooks. Expo sees the whole table.</p></figcaption>
+          </figure>
+
+          <figure class="how-card how-card-3" data-reveal>
+            <div class="how-img"><img src="images/plates-pass.jpg" alt="Plates of food waiting under the heat lamp at the pass" loading="lazy"></div>
+            <div class="how-ui ui-ready">
+              <i class="ph-fill ph-bell-ringing"></i>
+              <span><b>Table 12 is up</b><br>Pick up at the pass</span>
+            </div>
+            <figcaption><h3>Run it while it's hot</h3><p>The server's phone buzzes the moment the plate is ready.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="features-head" data-reveal>
+          <p class="eyebrow">Product</p>
+          <h2 id="features-title">Built for the middle <span class="serif-i">of service.</span></h2>
+        </div>
+
+        <div class="features-body" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Product features">
+            <button class="tab" role="tab" id="tab-kds" aria-controls="panel-kds" aria-selected="true">
+              <span class="tab-icon ic-amber"><i class="ph-duotone ph-cooking-pot"></i></span>
+              <span class="tab-text"><b>Kitchen display</b><span>Tickets timed and sorted by station. Bump with a tap.</span></span>
+              <span class="tab-progress" aria-hidden="true"></span>
+            </button>
+            <button class="tab" role="tab" id="tab-floor" aria-controls="panel-floor" aria-selected="false" tabindex="-1">
+              <span class="tab-icon ic-herb"><i class="ph-duotone ph-armchair"></i></span>
+              <span class="tab-text"><b>Floor plan</b><span>Every table's status and timer on one map.</span></span>
+              <span class="tab-progress" aria-hidden="true"></span>
+            </button>
+            <button class="tab" role="tab" id="tab-menu" aria-controls="panel-menu" aria-selected="false" tabindex="-1">
+              <span class="tab-icon ic-copper"><i class="ph-duotone ph-fork-knife"></i></span>
+              <span class="tab-text"><b>Menu and 86</b><span>Out of short rib? 86 it once and every screen updates.</span></span>
+              <span class="tab-progress" aria-hidden="true"></span>
+            </button>
+            <button class="tab" role="tab" id="tab-numbers" aria-controls="panel-numbers" aria-selected="false" tabindex="-1">
+              <span class="tab-icon ic-plum"><i class="ph-duotone ph-chart-bar"></i></span>
+              <span class="tab-text"><b>Tonight's numbers</b><span>Sales and labor, ready before you lock up.</span></span>
+              <span class="tab-progress" aria-hidden="true"></span>
+            </button>
+            <button class="tabs-pause" type="button" data-tabs-pause aria-pressed="false">
+              <i class="ph ph-pause"></i><span>Pause</span>
+            </button>
+          </div>
+
+          <div class="panels">
+            <!-- Kitchen display: zoomed crop -->
+            <div class="panel" role="tabpanel" id="panel-kds" aria-labelledby="tab-kds" tabindex="0">
+              <div class="window window-dark">
+                <div class="zoom-tickets">
+                  <article class="ticket ticket-xl is-warn">
+                    <header><span class="ticket-id">T7</span><span class="ticket-time num">6:48</span></header>
+                    <p class="ticket-sub">Dine-in · 2 guests · Marco · Grill</p>
+                    <ul>
+                      <li><b>1</b> Branzino <span class="flag"><i class="ph-bold ph-warning"></i>Nut allergy</span></li>
+                      <li><b>2</b> Caesar <em>dressing on the side</em></li>
+                    </ul>
+                    <span class="ticket-bump">Bump</span>
+                  </article>
+                  <article class="ticket ticket-xl is-new">
+                    <header><span class="ticket-id">T12</span><span class="ticket-time num">2:14</span></header>
+                    <p class="ticket-sub">Dine-in · 4 guests · Ana · Grill</p>
+                    <ul>
+                      <li><b>2</b> Short rib <em>no horseradish</em></li>
+                      <li><b>1</b> Ribeye <em>medium</em></li>
+                    </ul>
+                    <span class="ticket-bump">Bump</span>
+                  </article>
+                  <div class="timer-legend">
+                    <span><i class="dot dot-new"></i>Under 5 min</span>
+                    <span><i class="dot dot-warn"></i>5 to 10 min</span>
+                    <span><i class="dot dot-late"></i>Over 10 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floor plan -->
+            <div class="panel" role="tabpanel" id="panel-floor" aria-labelledby="tab-floor" tabindex="0" hidden>
+              <div class="window">
+                <div class="floor">
+                  <div class="floor-map">
+                    <div class="tbl tbl-sq t1 st-eating"><b>1</b><span class="num">38m</span></div>
+                    <div class="tbl tbl-sq t2 st-free"><b>2</b><span>Free</span></div>
+                    <div class="tbl tbl-rd t3 st-late"><b>3</b><span class="num">12m wait</span></div>
+                    <div class="tbl tbl-rd t4 st-dessert"><b>4</b><span>Dessert</span></div>
+                    <div class="tbl tbl-lg t7 st-eating"><b>7</b><span class="num">6m</span></div>
+                    <div class="tbl tbl-sq t8 st-resv"><b>8</b><span class="num">8:15</span></div>
+                    <div class="tbl tbl-rd t9 st-free"><b>9</b><span>Free</span></div>
+                    <div class="tbl tbl-lg t12 st-eating"><b>12</b><span class="num">21m</span></div>
+                    <div class="floor-bar">Bar · 6 of 8 seats</div>
+                  </div>
+                  <aside class="waitlist">
+                    <p class="wl-title">Waitlist <span class="num">3</span></p>
+                    <div class="wl-row"><span><b>Okafor</b> · 4</span><span class="num">~10m</span></div>
+                    <div class="wl-row"><span><b>Lindqvist</b> · 2</span><span class="num">~15m</span></div>
+                    <div class="wl-row"><span><b>Patel</b> · 6</span><span class="num">~35m</span></div>
+                    <span class="wl-next"><i class="ph-bold ph-arrow-right"></i>Table 4 turns next</span>
+                  </aside>
+                </div>
+                <div class="legend">
+                  <span><i class="dot dot-new"></i>Eating</span>
+                  <span><i class="dot dot-plum"></i>Dessert</span>
+                  <span><i class="dot dot-late"></i>Waiting on food</span>
+                  <span><i class="dot dot-free"></i>Free</span>
+                  <span><i class="dot dot-resv"></i>Reserved</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu and 86 -->
+            <div class="panel" role="tabpanel" id="panel-menu" aria-labelledby="tab-menu" tabindex="0" hidden>
+              <div class="window">
+                <div class="menu">
+                  <div class="menu-head"><b>Dinner menu</b><span>Mains · 6 items</span></div>
+                  <div class="menu-row"><span class="menu-name">Short rib <em>braised, horseradish</em></span><span class="menu-price num">$34</span><span class="badge badge-86">86'd 7:51 PM</span><span class="switch" aria-hidden="true"></span></div>
+                  <div class="menu-row"><span class="menu-name">Ribeye <em>14 oz, bone in</em></span><span class="menu-price num">$48</span><span class="badge badge-low">4 left</span><span class="switch is-on" aria-hidden="true"></span></div>
+                  <div class="menu-row"><span class="menu-name">Branzino <em>whole, lemon</em></span><span class="menu-price num">$36</span><span class="badge"></span><span class="switch is-on" aria-hidden="true"></span></div>
+                  <div class="menu-row"><span class="menu-name">Smash burger <em>double, fries</em></span><span class="menu-price num">$19</span><span class="badge"></span><span class="switch is-on" aria-hidden="true"></span></div>
+                  <div class="menu-row"><span class="menu-name">Wild mushroom risotto</span><span class="menu-price num">$26</span><span class="badge"></span><span class="switch is-on" aria-hidden="true"></span></div>
+                </div>
+                <div class="toast-demo">
+                  <i class="ph-fill ph-check-circle"></i>
+                  <span>Short rib is off 4 screens and online ordering.</span>
+                  <b>Undo</b>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tonight's numbers -->
+            <div class="panel" role="tabpanel" id="panel-numbers" aria-labelledby="tab-numbers" tabindex="0" hidden>
+              <div class="window">
+                <div class="numbers">
+                  <div class="kpis">
+                    <div class="kpi"><span>Net sales</span><b class="num">$11,420</b><em class="up">+8% vs last Fri</em></div>
+                    <div class="kpi"><span>Covers</span><b class="num">184</b><em class="up">+12</em></div>
+                    <div class="kpi"><span>Labor</span><b class="num">24.1%</b><em>of sales</em></div>
+                    <div class="kpi"><span>Avg ticket time</span><b class="num">8:40</b><em class="up">−1:10</em></div>
+                  </div>
+                  <div class="chart" role="img" aria-label="Covers by hour: 5 PM 12, 6 PM 31, 7 PM 52, 8 PM 47, 9 PM 28, 10 PM 14. Peak at 7 PM.">
+                    <p class="chart-title">Covers by hour</p>
+                    <div class="chart-plot">
+                      <div class="chart-grid" aria-hidden="true"><span>60</span><span>40</span><span>20</span><span>0</span></div>
+                      <div class="bars" aria-hidden="true">
+                        <div class="bar" style="--v:12"><span class="num">12</span><i>5p</i></div>
+                        <div class="bar" style="--v:31"><span class="num">31</span><i>6p</i></div>
+                        <div class="bar is-peak" style="--v:52"><span class="num">52</span><i>7p</i></div>
+                        <div class="bar" style="--v:47"><span class="num">47</span><i>8p</i></div>
+                        <div class="bar" style="--v:28"><span class="num">28</span><i>9p</i></div>
+                        <div class="bar" style="--v:14"><span class="num">14</span><i>10p</i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORIES -->
+    <section class="stories" id="stories" aria-labelledby="stories-title">
+      <div class="container">
+        <h2 id="stories-title" class="visually-hidden">What owners say</h2>
+        <div class="stories-grid">
+          <figure class="story-main" data-reveal>
+            <div class="story-photo"><img src="images/owner-wen.jpg" alt="Wen Hao looking out from the pass of his kitchen" loading="lazy"></div>
+            <blockquote>
+              <p>“Friday used to mean lost tickets and cold food at the pass. Now the line runs itself, and I get to talk to my guests again.”</p>
+            </blockquote>
+            <figcaption>
+              <span class="who"><b>Wen Hao</b> Owner, Lucky Pot</span>
+              <span class="metric"><span class="num">14 → 9 min</span> average ticket time</span>
+            </figcaption>
+          </figure>
+
+          <div class="story-side">
+            <figure class="story" data-reveal>
+              <blockquote><p>“We set it up on a Monday and ran a full Sunday brunch on it that week.”</p></blockquote>
+              <figcaption>
+                <img src="images/owner-maya.jpg" alt="" loading="lazy">
+                <span class="who"><b>Maya Lund</b> Owner, Ground Floor</span>
+              </figcaption>
+            </figure>
+            <figure class="story" data-reveal>
+              <blockquote><p>“I can 86 a dish from my phone. That alone saved us a lot of awkward moments at tables.”</p></blockquote>
+              <figcaption>
+                <img src="images/owner-daniel.jpg" alt="" loading="lazy">
+                <span class="who"><b>Daniel Ferraro</b> GM, Osteria Brava</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="demo" aria-labelledby="cta-title" data-cta>
+      <div class="cta-bg" aria-hidden="true"><img src="images/stove-steam.jpg" alt="" loading="lazy"></div>
+      <div class="container cta-inner" data-cta-copy>
+        <h2 id="cta-title">Get through Friday night without losing a ticket.</h2>
+        <p class="lead">We'll load your menu and set up your stations with you on the call.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#demo"><span class="btn-label"><span>Book a demo</span></span></a>
+          <a class="cta-phone" href="tel:+15550142290"><i class="ph ph-phone"></i>or call (555) 014-2290</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#top" aria-label="Mise, back to top">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M10 9h12v14l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5-2 1.5z"/></svg>
+        <span class="logo-word">Mise</span>
+      </a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#how">How it works</a>
+        <a href="#features">Product</a>
+        <a href="#stories">Stories</a>
+        <a href="#support">Support</a>
+        <a href="#login">Log in</a>
+      </nav>
+      <div class="socials">
+        <a href="#instagram" aria-label="Mise on Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="#linkedin" aria-label="Mise on LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="#youtube" aria-label="Mise on YouTube"><i class="ph ph-youtube-logo"></i></a>
+      </div>
+      <div class="footer-base">
+        <span>© 2026 Mise</span>
+        <span>Photos from <a href="https://unsplash.com">Unsplash</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

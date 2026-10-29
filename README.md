@@ -10,6 +10,14 @@ git clone https://github.com/MasterKPG/master-design-web.git ~/.claude/skills/ma
 
 Restart Claude Code and check that `master-design-web` appears under `/skills`. It triggers on UI design, build, redesign and review tasks, or you can call it directly with `/master-design-web`.
 
+## Built with this skill
+
+Each example below was made from a single prompt.
+
+### "build me a landing page for a restaurant software"
+
+**[See the live page →](https://masterkpg.github.io/master-design-web/restaurant-software-example/)** · [source](restaurant-software-example/)
+
 ## Structure
 
 ```
