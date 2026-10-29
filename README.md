@@ -27,7 +27,8 @@ guidelines/              detailed rules (hierarchy, layout, type, color, dark mo
                          accessibility, identity workflow, landing pages,
                          dashboards, mobile apps, UX thinking, vibe-coding tells,
                          presenting designs)
-examples/                reference screenshots, Figma files and video transcripts
+examples/                reference screenshots and notes (the Figma files and
+                         video transcripts stay local, see .gitignore)
 design-notes.txt         the original notes the skill was written from
 CLAUDE.md                how to maintain the skill
 ```

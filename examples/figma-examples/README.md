@@ -2,6 +2,8 @@
 
 Each `.fig` file belongs to a design video whose auto-generated transcript is saved here as `[English (auto-generated)] <title> [DownSub.com].txt`. The lessons have been folded into the guidelines. This index says where.
 
+The `.fig` files and transcripts are third-party material, so they're kept in the owner's local copy only (see `.gitignore`) and aren't in the public repo. The guidelines don't need them to work.
+
 | Video / `.fig` | Take from it | Folded into |
 |---|---|---|
 | Every UI Concept Explained (`Every UI Concept-1.fig`) | The basics: signifiers, hierarchy, grids, type, color, dark mode, shadows, icons, states, overlays. The source of much of the original notes | All core guideline files |
