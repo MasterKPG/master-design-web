@@ -18,6 +18,10 @@ Each example below was made from a single prompt.
 
 **[See the live page →](https://masterkpg.github.io/master-design-web/restaurant-software-example/)** · [source](restaurant-software-example/)
 
+### "build me a landing page for a web design agency. use one font only."
+
+**[See the live page →](https://masterkpg.github.io/master-design-web/web-design-agency-example/)** · [source](web-design-agency-example/)
+
 ## Structure
 
 ```
