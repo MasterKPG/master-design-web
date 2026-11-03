@@ -1,6 +1,6 @@
 # Social Proof and Logos
 
-A logo band right under the hero, static or as a marquee, is a good and common answer. It only becomes a problem when it goes on every page by reflex: teardowns of 2026 SaaS pages note that visitors discount logo walls that look like a template default. Decide what proof you actually have, then choose where and how it shows. The band under the hero stays on the list.
+A logo band right under the hero, static or as a marquee, is a good and common answer. Teardowns of 2026 SaaS pages note that visitors discount logo walls that look like a template default, so decide what proof you actually have, then choose where and how it shows.
 
 ## First: what proof do you have?
 
@@ -17,7 +17,7 @@ A logo band right under the hero, static or as a marquee, is a good and common a
 
 | Form | How | When |
 |---|---|---|
-| **Classic band under the hero** | A row of 5-8 monochrome logos at uniform optical size, static or as a marquee with faded edges and a pause button | B2B buyers checking "says who" right after the promise (Slack, Vercel, Stripe). A strong choice; just not on every build by habit |
+| **Classic band under the hero** | A row of 5-8 monochrome logos at uniform optical size, static or as a marquee with faded edges and a pause button | B2B buyers checking "says who" right after the promise (Slack, Vercel, Stripe). A strong choice |
 | **Inside the hero** | A "Trusted by" line or 3-5 small logos under the CTA, inside the hero itself | When the hero has room and the logos are the strongest argument |
 | **Logos as background** | Large, low-opacity monochrome logos layered behind the hero or a section, part of the composition rather than a list. Variant: a huge faint logo revealed by a spotlight that follows the cursor | Brand-led pages; agencies and studios showing who they worked for. Keep text contrast (4.5:1) on top |
 | **Scattered with the context objects** | Logos placed among the hero's real-world objects (on packaging, a sign, a ticket, a tablet screen) | Scattered-object heroes; the logos then read as part of the user's world |

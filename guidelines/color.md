@@ -118,7 +118,7 @@ To make a color-themed version of any neutral palette: for each neutral, convert
 
 ## Palettes from identity (marketing sites)
 
-For brand-driven sites, the palette can come from imagery instead of a single brand color:
+The palette can come from imagery instead of a single brand color:
 - Pull tones from the moody images you've chosen (e.g. earthy tones for a restaurant).
 - Add a few accent colors that work with that palette.
 - Lighter shades for backgrounds, darker shades for text and primary buttons. Save the most saturated color for accents and the CTA.

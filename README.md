@@ -30,7 +30,7 @@ Each example below was made from a single prompt. They're grouped by the release
 SKILL.md                 process, core principles, checklist, file index
 guidelines/              detailed rules (hierarchy, layout, type, color, dark mode,
                          shadows/overlays, icons/states, motion, hero scroll
-                         motion, social proof, nav and footers, components,
+                         motion, social proof, nav and footers, pricing, components,
                          accessibility, identity workflow, landing pages,
                          dashboards, mobile apps, UX thinking, vibe-coding tells,
                          presenting designs)

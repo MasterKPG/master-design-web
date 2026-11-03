@@ -50,7 +50,7 @@ Detailed source lists: `../examples/ai-telltales/`.
 | Metaphors | realm, landscape, tapestry, intersection, beacon | area, industry, market, mix, guide |
 | Padding | furthermore, moreover, notably, indeed, in essence | also, next, or delete |
 
-- Generic labels: "Get started" and "Learn more" when a specific action fits better.
+- Generic labels: "Get started" and "Learn more" on every button, when a specific action fits better. Using them from time to time, where they match the offer, is fine.
 
 ## Platform leftovers
 

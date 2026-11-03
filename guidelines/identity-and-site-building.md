@@ -1,6 +1,6 @@
 # Identity and Site Building ("Frankensteining")
 
-This is the workflow for brand-driven sites: landing pages, marketing sites, product sites. The running example throughout is a **landing page for restaurant software**.
+This is the workflow for every project: no website or app is without a brand, whether it's pronounced or not. The running example throughout is a **landing page for restaurant software**.
 
 ## Why: the vibe-coded look and how to fix it
 
@@ -23,7 +23,11 @@ This is the workflow for brand-driven sites: landing pages, marketing sites, pro
 
 The order matters less than doing the work. The default is **identity first**, so the flow and the wireframe are built on the identity rather than the identity bent to fit the wireframe.
 
-There are **two validation gates**: the user approves the plan (Step 0) and the brand identity folder (end of Step 1) before any page gets built. Never skip them to save time; rebuilding a finished site on the wrong identity costs far more.
+There are **two validation gates**: the user approves the plan (Step 0) and the brand identity folder (end of Step 1) before any page gets built. Don't skip them to save time; rebuilding a finished site on the wrong identity costs far more.
+
+**When to skip:**
+- The first prompt already answers the setup questions: skip the questions and go straight to the proposal.
+- The user says to build straight away: skip both gates and build. List the choices you made (palette, type, hero motion, proof, nav, footer) at the end so they can change them.
 
 ### Step 0: Ask, research, propose
 

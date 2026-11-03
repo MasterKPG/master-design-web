@@ -10,7 +10,7 @@ Strong designs need icons. Good icons do a lot for a design, and bad ones do rea
 - **One style per area.** Icons must match in fill, line width and style. Mixing styles is fine only when they're in visually separate areas with different jobs (nav icons vs. category icons).
 - **Cards without icons force reading.** Add icons where they help identify content (see `visual-hierarchy.md`).
 - **Labels:** well-known icons (home, bookmark, user, search) don't need labels. Obscure ones need a label or a tooltip.
-- On brand-driven sites, draw feature icons in the identity's accent colors (see `identity-and-site-building.md`).
+- Draw feature icons in the identity's accent colors (see `identity-and-site-building.md`).
 - **Remove redundant icons and arrows.** An arrow that duplicates a swipe, or a stroke that adds nothing, is clutter.
 
 ## Ghost buttons

@@ -58,7 +58,7 @@ Level 4 needs no custom illustrations or 3D, just well-crafted UI with attention
 
 ## Hero motion
 
-The hero's scroll motion is chosen per identity from the catalog in `hero-and-scroll-motion.md` (expand to full bleed, zoom through the mask, sticky scrub, kinetic type, split reveal, stacked cards, cinemagraph and more). The blur/pull-away is a good entry in it; just don't use it on every build by habit.
+The hero's scroll motion is chosen per identity from the catalog in `hero-and-scroll-motion.md` (expand to full bleed, zoom through the mask, sticky scrub, kinetic type, split reveal, stacked cards, cinemagraph and more). The blur/pull-away is one entry in it.
 
 ## Navigation and footers
 
@@ -66,16 +66,6 @@ The hero's scroll motion is chosen per identity from the catalog in `hero-and-sc
 - The main CTA and the nav CTA share the same label when they go to the same place.
 - Size the footer to the links you have: 3-5 links get a small centered footer, not a 5-column one copied from Apple or Linear.
 - Other forms (floating pill, sticky on scroll-up, fullscreen overlay, section index; CTA, oversized wordmark, reveal and image footers): `navigation-and-footers.md`.
-
-## Pricing pages
-
-- 3-4 tiers ordered by commitment, with a "most popular" badge on one (usually the middle).
-- Whole-number prices with the billing unit beside them; a monthly/annual toggle with the saving shown.
-- 4-6 features per plan, "Everything in [previous plan], plus...", and a grouped comparison table below (accordions on mobile).
-- Strongest proof next to the CTAs; about 5 FAQs (cancellation, contracts, trials) on the page itself.
-- Tooltips open on tap, not only hover. On mobile, stack the cards and keep the buy button sticky.
-- CTA label matches the offer: "Start for free", "Get started", "Talk to sales".
-- Card details: `components.md`. Source: https://www.figma.com/resource-library/pricing-page-best-practices/
 
 ## Making it delightful
 

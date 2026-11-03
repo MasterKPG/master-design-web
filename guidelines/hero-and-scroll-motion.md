@@ -1,6 +1,6 @@
 # Hero and Scroll Motion
 
-The hero blur/pull-away (`micro-interactions-and-motion.md`, bookends) is a good technique and stays a strong choice. The problem is using it on every build by habit: then every site opens the same way. Pick the hero motion the way you pick the palette: from what the product is and what the hero has to show. Sometimes that's the pull-away; often it's something else in the catalog below.
+The hero blur/pull-away (`micro-interactions-and-motion.md`, bookends) is a good technique and stays a strong choice. Pick the hero motion the way you pick the palette: from what the product is and what the hero has to show. Sometimes that's the pull-away; often it's something else in the catalog below.
 
 ## How to choose
 

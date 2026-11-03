@@ -131,14 +131,6 @@ Tame and user-focused compared with landing pages: hover states, smooth menus an
 - **Tablet (≈641-1100px):** the sidebar folds into a top bar; tables keep 4-5 columns and move secondary fields into sublines.
 - **Phone:** see `mobile-apps.md` (tables become two-line rows, KPIs become a 2-column grid or label/value list, one row of controls above a chart).
 
-## Pricing and billing pages (SaaS)
-
-- Fewer plans: five is too many; drop at least one.
-- Make the plan name smaller and the **monthly price bigger**; people care about price, not names.
-- Show the actual discount and what the next plan adds that this one lacks (Resend, Supabase).
-- Add the billing email and payment method. Use tabs (Billing, Usage) so the page can grow.
-- Pricing card details: `components.md`.
-
 ## Reference products
 
 Linear (clarity, consistent system, subtle meaningful status animation, keyboard-first), Vercel (near-monochrome, color only for meaning, build-status notifications), Stripe (table-centric, aligned numbers), Notion (tabs for views, settings as lists inside a modal), Dub (empty states, notifications in the sidebar, hover for upgrade details), Mercury (tinted sidebar anchor), Supabase (monochrome layers, pricing pattern).

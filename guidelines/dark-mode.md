@@ -43,7 +43,7 @@ You aren't limited to navy blue or grey. Deep colors work well:
 
 ## Avoid the "flat, typical" dark mode
 
-For brand-driven sites, a moody image-led identity is how you escape both sterile light modes and flat, typical dark modes. See `identity-and-site-building.md`.
+A moody image-led identity is how you escape both sterile light modes and flat, typical dark modes. See `identity-and-site-building.md`.
 
 ## Check contrast separately
 

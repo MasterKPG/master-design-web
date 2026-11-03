@@ -10,12 +10,12 @@ These are **guidelines, not laws**. Each rule is a default; the guideline files 
 ## Working process
 
 1. **Identify what you're designing and the user's one main goal.** Landing page, dashboard, mobile app or component. This sets density, type scale, grid strictness and how much motion is appropriate.
-   - **New project:** ask the setup questions in one round, research the product's world and its palette, then propose the build (palettes, type, hero motion, proof form, nav, footer, section flow) and **wait for the user's yes**.
+   - **New project:** ask the setup questions in one round, research the product's world and its palette, then propose the build (palettes, type, hero motion, proof form, nav, footer, section flow) and **wait for the user's yes**. Skip the questions the first prompt already answers; skip the gates when the user says to build straight away (`identity-and-site-building.md`).
    - **Existing project:** review it bluntly first: what to keep, what to improve, what to remove, ranked. No hedging. Wait for the yes.
-2. **Brand-driven pages:** follow the workflow in `guidelines/identity-and-site-building.md`:
+2. **Every project is brand-driven.** No website or app is without a brand, whether it's pronounced or not. Follow `guidelines/identity-and-site-building.md`:
    ask and propose → identity (moody image → palette → type → icons) in a `brand/` folder the user validates → message and site flow → frankenstein wireframe → build section by section → motion.
-   Hero motion, social proof, nav and footer are chosen per identity from their catalogs, never defaulted.
-3. **Product screens:** plan the flow and every state first (`guidelines/ux-and-product-thinking.md`), then follow `guidelines/dashboards.md` or `guidelines/mobile-apps.md`.
+   Hero motion, social proof, nav and footer are chosen per identity from their catalogs.
+3. **Product screens:** on top of the identity, plan the flow and every state first (`guidelines/ux-and-product-thinking.md`), then follow `guidelines/dashboards.md` or `guidelines/mobile-apps.md`.
 4. **Hierarchy per component:** decide what's most important *in this context* and make it dominant with size, color and position. Lock elements to edges.
 5. **Layout and spacing:** grid for structured content, free layout for impact. 4pt grid for the first sketch. Group by proximity. Replace noise with white space.
 6. **Typography and copy:** one font to start, a size scale for the product type, tight large headings, short precise headings.
@@ -62,7 +62,7 @@ These are **guidelines, not laws**. Each rule is a default; the guideline files 
 - [ ] Motion: purposeful, eased, repeated as identity, quick for feedback.
 - [ ] Vibe-coding tells: none used by default (`guidelines/vibe-coding-tells.md`).
 - [ ] The plan and the `brand/` folder were validated by the user before the build.
-- [ ] Hero motion, proof form, nav and footer were picked for this identity, not copied from the last build. The hero works with motion off.
+- [ ] Hero motion, proof form, nav and footer were picked for this identity. The hero works with motion off.
 
 ## When to read what
 
@@ -79,11 +79,12 @@ These are **guidelines, not laws**. Each rule is a default; the guideline files 
 | `guidelines/hero-and-scroll-motion.md` | Choosing the hero's scroll technique (catalog), cinemagraphs, CSS scroll-driven and GSAP builds |
 | `guidelines/social-proof-and-logos.md` | Where and how customer logos, testimonials, stats and press appear |
 | `guidelines/navigation-and-footers.md` | Nav forms (pill, sticky, mega, overlay, index) and footer forms (CTA, wordmark, reveal, image) |
-| `guidelines/components.md` | Cards, pricing, forms, footers, chips, carousels, stickers, search |
+| `guidelines/pricing.md` | Pricing cards, pricing pages, in-app billing pages |
+| `guidelines/components.md` | Cards, forms, footers, chips, carousels, stickers, search |
 | `guidelines/accessibility.md` | Contrast numbers, focus, targets, motion, forms, screen readers |
-| `guidelines/identity-and-site-building.md` | Any landing/marketing page; a generic or vibe-coded redesign |
-| `guidelines/landing-pages.md` | Hero anatomy, section patterns, the 4 quality levels, nav and footer basics, pricing pages |
-| `guidelines/dashboards.md` | Dashboards, admin panels, web apps, tables, charts, SaaS pricing |
+| `guidelines/identity-and-site-building.md` | Every project (start here); a generic or vibe-coded redesign |
+| `guidelines/landing-pages.md` | Hero anatomy, section patterns, the 4 quality levels, nav and footer basics |
+| `guidelines/dashboards.md` | Dashboards, admin panels, web apps, tables, charts |
 | `guidelines/mobile-apps.md` | Any mobile app screen, navigation, gestures, bottom sheets |
 | `guidelines/ux-and-product-thinking.md` | Flows, states, onboarding, undo vs. confirm, AI product UI |
 | `guidelines/vibe-coding-tells.md` | Reviewing or de-generic-ing any UI or copy |

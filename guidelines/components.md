@@ -1,6 +1,6 @@
 # Components
 
-Upgrades for the elements most often done wrong. Each one improves both the UI and the UX. State rules for buttons and inputs are in `icons-buttons-states.md`; dashboard-specific components are in `dashboards.md`.
+Upgrades for the elements most often done wrong. Each one improves both the UI and the UX. State rules for buttons and inputs are in `icons-buttons-states.md`; dashboard-specific components are in `dashboards.md`; pricing cards and pages are in `pricing.md`.
 
 ## Cards
 
@@ -9,19 +9,6 @@ Upgrades for the elements most often done wrong. Each one improves both the UI a
 - **Specific action → specific CTA** ("Try it out").
 - **Image card with gradient** (Apple Music): image at ~3/4 of the card height, a long smooth gradient from the bottom of the image upward, text on top. Only works with some images; the plain image-above-text card always works.
 - Don't nest cards in cards.
-
-## Pricing cards
-
-1. Put the button near the top, under the price. Keep hierarchy by making it outline-only (no fill).
-2. Replace bullets with **check marks**, and list a feature this plan *doesn't* include, so the next plan looks better.
-3. Give the plan a **name and a short description**.
-4. Add the honest billing note (e.g. "billed annually, $20/month").
-5. Separate the price block from the features with a reduced-opacity primary background, rather than a divider line.
-6. Use an actionable CTA label.
-7. Price big, plan name small (see `dashboards.md`, pricing pages).
-8. Whole numbers, with the unit (per month, per user) next to the price.
-
-Whole-page rules (tiers, toggle, comparison table, FAQ, mobile): `landing-pages.md`, pricing pages.
 
 ## Forms: sign-up and log-in
 
