@@ -14,6 +14,23 @@ Design is mostly text, made beautiful. Get the type right and most of the design
   - Unbounded
 - Don't spend most of your time choosing font packs or pairings. Start with one font, then change it as you iterate.
 
+### More options by job
+
+| Job | Fonts |
+|---|---|
+| Interface and body text | Inter (tabular figures, variable), Work Sans (14-48px), Source Sans, Open Sans (many languages), Manrope |
+| Friendly and warm | Nunito (rounded), Lato, Rubik, Poppins |
+| Elegant or luxury display | Josefin Sans, Raleway, Playfair Display (serif) |
+| Trust and editorial body | Libre Baskerville, Lora, Neuton (compact) |
+| Expressive display | Ranade, Soria, Object Sans |
+| Slab, sturdy or playful | Sreda, Arvo |
+
+- **Choose by:** readability across screens, a full family (weights, styles, languages), fit with the brand's message, and harmony with any second font.
+- **Prefer variable fonts:** finer control of weight and width, and one file instead of many.
+- **Pairing inside one family** (weight and style changes between heading, body and buttons) is the safest second step.
+- **Bold, oversized and kinetic type** is a 2026 trend for heroes (Glossier, Samsung): animated text on scroll, variable axes that react to interaction. See `hero-and-scroll-motion.md`.
+- Sources: https://www.figma.com/fr-fr/resource-library/meilleures-polices-pour-sites-web/, https://www.figma.com/fr-fr/resource-library/tendances-web-design/
+
 **This rule can be broken, like every rule here.**
 
 - Apple's website uses many fonts and it isn't a bad site. Every font follows Apple's identity: clarity and intuitiveness. Use more than one font when it helps convey a message, and only if every font serves the identity.

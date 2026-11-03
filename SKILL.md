@@ -1,6 +1,6 @@
 ---
 name: master-design-web
-description: Personal design guidelines for building, redesigning or reviewing any user interface - landing pages, marketing sites, dashboards, admin panels, web apps, mobile app screens, and individual components (cards, buttons, inputs, forms, tables, charts, navigation, modals). Use whenever the task is to design, build, restyle, polish or critique a UI, or when the user says a page looks generic, boring or "vibe-coded". Covers visual hierarchy, layout and spacing, typography and copy, color, dark mode, shadows and overlays, icons and states, micro-interactions and motion, accessibility, dashboards, mobile apps, UX flows, landing page patterns, and a step-by-step identity-to-website workflow.
+description: Personal design guidelines for building, redesigning or reviewing any user interface - landing pages, marketing sites, dashboards, admin panels, web apps, mobile app screens, and individual components (cards, buttons, inputs, forms, tables, charts, navigation, modals). Use whenever the task is to design, build, restyle, polish or critique a UI, or when the user says a page looks generic, boring or "vibe-coded". Covers visual hierarchy, layout and spacing, typography and copy, color, dark mode, shadows and overlays, icons and states, micro-interactions and motion, hero scroll animations, social proof and logos, navigation and footer forms, accessibility, dashboards, mobile apps, UX flows, landing page patterns, and a step-by-step identity-to-website workflow.
 ---
 
 # Master Design (Web and Apps)
@@ -10,8 +10,11 @@ These are **guidelines, not laws**. Each rule is a default; the guideline files 
 ## Working process
 
 1. **Identify what you're designing and the user's one main goal.** Landing page, dashboard, mobile app or component. This sets density, type scale, grid strictness and how much motion is appropriate.
+   - **New project:** ask the setup questions in one round, research the product's world and its palette, then propose the build (palettes, type, hero motion, proof form, nav, footer, section flow) and **wait for the user's yes**.
+   - **Existing project:** review it bluntly first: what to keep, what to improve, what to remove, ranked. No hedging. Wait for the yes.
 2. **Brand-driven pages:** follow the workflow in `guidelines/identity-and-site-building.md`:
-   identity (moody image → palette → type → icons) → message and site flow → frankenstein wireframe → build section by section → motion.
+   ask and propose → identity (moody image → palette → type → icons) in a `brand/` folder the user validates → message and site flow → frankenstein wireframe → build section by section → motion.
+   Hero motion, social proof, nav and footer are chosen per identity from their catalogs, never defaulted.
 3. **Product screens:** plan the flow and every state first (`guidelines/ux-and-product-thinking.md`), then follow `guidelines/dashboards.md` or `guidelines/mobile-apps.md`.
 4. **Hierarchy per component:** decide what's most important *in this context* and make it dominant with size, color and position. Lock elements to edges.
 5. **Layout and spacing:** grid for structured content, free layout for impact. 4pt grid for the first sketch. Group by proximity. Replace noise with white space.
@@ -58,6 +61,8 @@ These are **guidelines, not laws**. Each rule is a default; the guideline files 
 - [ ] Accessibility: contrast 4.5:1 text / 3:1 UI, visible focus, labels above inputs, color never alone, reduced-motion fallback.
 - [ ] Motion: purposeful, eased, repeated as identity, quick for feedback.
 - [ ] Vibe-coding tells: none used by default (`guidelines/vibe-coding-tells.md`).
+- [ ] The plan and the `brand/` folder were validated by the user before the build.
+- [ ] Hero motion, proof form, nav and footer were picked for this identity, not copied from the last build. The hero works with motion off.
 
 ## When to read what
 
@@ -71,10 +76,13 @@ These are **guidelines, not laws**. Each rule is a default; the guideline files 
 | `guidelines/shadows-and-overlays.md` | Elevation, effects, text over images |
 | `guidelines/icons-buttons-states.md` | Icons, buttons, chips, button and input states, feedback |
 | `guidelines/micro-interactions-and-motion.md` | Micro-interactions, easing, scroll motion, motion identity |
+| `guidelines/hero-and-scroll-motion.md` | Choosing the hero's scroll technique (catalog), cinemagraphs, CSS scroll-driven and GSAP builds |
+| `guidelines/social-proof-and-logos.md` | Where and how customer logos, testimonials, stats and press appear |
+| `guidelines/navigation-and-footers.md` | Nav forms (pill, sticky, mega, overlay, index) and footer forms (CTA, wordmark, reveal, image) |
 | `guidelines/components.md` | Cards, pricing, forms, footers, chips, carousels, stickers, search |
 | `guidelines/accessibility.md` | Contrast numbers, focus, targets, motion, forms, screen readers |
 | `guidelines/identity-and-site-building.md` | Any landing/marketing page; a generic or vibe-coded redesign |
-| `guidelines/landing-pages.md` | Hero anatomy, section patterns, the 4 quality levels, nav, footers |
+| `guidelines/landing-pages.md` | Hero anatomy, section patterns, the 4 quality levels, nav and footer basics, pricing pages |
 | `guidelines/dashboards.md` | Dashboards, admin panels, web apps, tables, charts, SaaS pricing |
 | `guidelines/mobile-apps.md` | Any mobile app screen, navigation, gestures, bottom sheets |
 | `guidelines/ux-and-product-thinking.md` | Flows, states, onboarding, undo vs. confirm, AI product UI |
@@ -82,4 +90,4 @@ These are **guidelines, not laws**. Each rule is a default; the guideline files 
 | `guidelines/presenting-designs.md` | Portfolio shots, client presentations, mockups |
 | `examples/README.md` | Reference sites, `.fig` files and transcripts (inspiration only, never copy) |
 
-Read only the files relevant to the task. Full landing page: start with `identity-and-site-building.md`. Dashboard: `dashboards.md`. Mobile: `mobile-apps.md`. Always finish with `accessibility.md`.
+Read only the files relevant to the task. Full landing page: start with `identity-and-site-building.md`, then the three catalogs (hero motion, proof, nav and footers) before proposing the build. Dashboard: `dashboards.md`. Mobile: `mobile-apps.md`. Always finish with `accessibility.md`.

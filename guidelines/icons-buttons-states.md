@@ -58,6 +58,24 @@ Every button needs at least these 4 states:
 
 **Loading state:** keep the pressed look and swap the icon for a loader, usually a spinning circle. This is a good place to show the brand: a custom loading animation that shows the logo or something specific to the app/website.
 
+**Functional states** for buttons that trigger work:
+
+| State | Treatment |
+|---|---|
+| Focused (keyboard) | `:focus-visible` ring, about 3px outline at a 3px offset. Never `outline: none` without a replacement |
+| Pressed | Deeper color plus a slight scale-down (about 0.98) |
+| Loading | Spinner for short waits, progress bar for measurable ones; block repeat clicks (`pointer-events: none`, `cursor: wait`) |
+| Success | Brief check and a specific label: "Saved", "Sent" |
+| Error | Back to clickable so the user can retry, with an inline message saying what failed and what to do |
+| Selected (toggle) | Filled or inverted until turned off; `aria-pressed="true"` |
+| Disabled | Stays visible, and explains what's blocking it (tooltip or inline note) |
+
+- Keep state transitions at **100-200ms**.
+- Every state keeps 4.5:1 text contrast, and never signals by color alone (add an icon, border weight or label).
+- Mobile has no hover, so pressed and loading carry the feedback. Targets stay at least 44x44px.
+- Repeated clicks on one element (rage clicks in heatmaps) usually mean a missing state.
+- Source: https://www.figma.com/resource-library/button-states/
+
 **Quick feedback when the next screen is slow:** if the next screen takes a split second to load, grey the button out as soon as it's clicked so the user knows it worked. Add a spinner if it takes longer.
 
 ### Input states

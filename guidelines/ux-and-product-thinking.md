@@ -11,6 +11,19 @@ Most designers design the perfect screen. Real apps need every state users actua
 - **Success / error:** say what happened (Vercel tells you the build status immediately). After connecting an integration, show success or error.
 - **Hidden states:** hovers, menus, tooltips and micro-interactions are the most commonly missed elements.
 
+### Questions to keep asking
+
+- **Before:** who is this for, what do we know vs. assume, what do they do today instead, and in what context (device, place, mood, time pressure)?
+- **While designing:** does this solve the real goal or a symptom? Does it work beyond the happy path, for different abilities and devices? What friction did we add?
+- **When testing:** can people reach the goal without instructions? Where do they hesitate or backtrack? What did they expect versus what happened?
+- **After launch:** where do they drop off, and what is the next most important thing to fix?
+
+### Validate before it ships
+
+Break the happy path on purpose: very long labels, 200 items, an empty list, a failed image, a modal closed mid-form, a pasted paragraph on a small screen, translated text and other currencies. Then a keyboard and screen-reader pass. Track task completion, errors, time on task and drop-off.
+
+Sources: https://www.figma.com/resource-library/user-centered-design-questions/, https://www.figma.com/resource-library/ux-validation/
+
 ## 2. Build for flow
 
 Think in screens and sequences, not sections. For every screen, ask: **how did the user get here, and what do they need next?**

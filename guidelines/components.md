@@ -19,6 +19,9 @@ Upgrades for the elements most often done wrong. Each one improves both the UI a
 5. Separate the price block from the features with a reduced-opacity primary background, rather than a divider line.
 6. Use an actionable CTA label.
 7. Price big, plan name small (see `dashboards.md`, pricing pages).
+8. Whole numbers, with the unit (per month, per user) next to the price.
+
+Whole-page rules (tiers, toggle, comparison table, FAQ, mobile): `landing-pages.md`, pricing pages.
 
 ## Forms: sign-up and log-in
 
@@ -32,7 +35,7 @@ Upgrades for the elements most often done wrong. Each one improves both the UI a
 
 ## Footers
 
-See `landing-pages.md`: 3-5 centered links, logo above, socials below, copyright left, credits right. Big multi-column footers only when there are many links.
+Default for few links: 3-5 centered links, logo above, socials below, copyright left, credits right. Big multi-column footers only when there are many links. Other forms (CTA, oversized wordmark, reveal, image/video, interactive): `navigation-and-footers.md`.
 
 ## Chips
 

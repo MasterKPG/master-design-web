@@ -31,7 +31,7 @@ Text can be centered (most common), left-aligned, or split with the body and CTA
 
 ## Section patterns from 50 top software sites
 
-1. **Logos.** 41 of 50 sites show well-known customer logos. Simple version: the most important logos in a row. Fancy version: a marquee sliding left-to-right with a gradient and a progressive blur fading the edges.
+1. **Logos.** 41 of 50 sites show well-known customer logos. Simple version: the most important logos in a row. Fancy version: a marquee sliding left-to-right with a gradient and a progressive blur fading the edges. The band under the hero is only one placement: logos can sit in the hero background, inside the product shot, beside testimonials or near the CTA (`social-proof-and-logos.md`).
 2. **Centered hero with a big image.** Everyone uses it, so differentiate: a distinctive font, an inline diagram, an interactive product image, a very subtle background gradient.
 3. **Clickable multi-section.** Tabs that switch a large visual, horizontal or vertical, optionally on a timer (Webflow). **Design every tab**, not just the first one.
 4. **Simple, tasteful animations.** Simple hover effects done well beat heavy 3D. Don't go overboard.
@@ -56,16 +56,26 @@ Level 4 needs no custom illustrations or 3D, just well-crafted UI with attention
 - Even simple graphics help: product cards (e.g. link cards) with a slight skew elevate a plain page.
 - Use the product's own colors for the page's color pops.
 
-## Navigation
+## Hero motion
+
+The hero's scroll motion is chosen per identity from the catalog in `hero-and-scroll-motion.md` (expand to full bleed, zoom through the mask, sticky scrub, kinetic type, split reveal, stacked cards, cinemagraph and more). The blur/pull-away is a good entry in it; just don't use it on every build by habit.
+
+## Navigation and footers
 
 - Give the nav hierarchy: the main action stands out (outline or fill), more important links get dropdowns, and the menu is balanced across the bar.
 - The main CTA and the nav CTA share the same label when they go to the same place.
+- Size the footer to the links you have: 3-5 links get a small centered footer, not a 5-column one copied from Apple or Linear.
+- Other forms (floating pill, sticky on scroll-up, fullscreen overlay, section index; CTA, oversized wordmark, reveal and image footers): `navigation-and-footers.md`.
 
-## Footers
+## Pricing pages
 
-- Most sites don't have 23 links, so they don't need a 5-column footer copied from Apple or Linear.
-- **For 3-5 links:** centered links with the logo above, socials below, copyright on the left, credits on the right. Works in dark mode too.
-- Only move to a multi-column footer when you truly have more links.
+- 3-4 tiers ordered by commitment, with a "most popular" badge on one (usually the middle).
+- Whole-number prices with the billing unit beside them; a monthly/annual toggle with the saving shown.
+- 4-6 features per plan, "Everything in [previous plan], plus...", and a grouped comparison table below (accordions on mobile).
+- Strongest proof next to the CTAs; about 5 FAQs (cancellation, contracts, trials) on the page itself.
+- Tooltips open on tap, not only hover. On mobile, stack the cards and keep the buy button sticky.
+- CTA label matches the offer: "Start for free", "Get started", "Talk to sales".
+- Card details: `components.md`. Source: https://www.figma.com/resource-library/pricing-page-best-practices/
 
 ## Making it delightful
 

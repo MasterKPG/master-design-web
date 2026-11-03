@@ -32,6 +32,7 @@ Detailed source lists: `../examples/ai-telltales/`.
 - **Superficial hierarchy:** "**Label:** value" bold prefixes down a whole layout instead of real styles.
 - **Alternating text-left/image-right sections** all the way down (level 1 in `landing-pages.md`).
 - **Every section in the same layout family, everything centered.**
+- **The same trio on every build:** a hero that blurs and fades away, a logo marquee right under it, a small centered footer. All three are good designs and look good; use any of them, together or apart, whenever they fit. The tell is reaching for the same set by reflex on every site, so each build looks like the last. Vary across builds to keep the work from going monotone, not to be different for its own sake: if the last few sites all used this set, check whether this one really calls for it, and look at `hero-and-scroll-motion.md`, `social-proof-and-logos.md` and `navigation-and-footers.md` for the other options.
 
 ## Copy tells
 

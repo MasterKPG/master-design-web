@@ -18,6 +18,17 @@ Model the palette on **what the product is and the environment it lives in**, no
 
 **Example: a skincare brand.** Great product photos, bright white background, lots of white space.
 
+### Research the palette before proposing it
+
+Before any palette goes to the user:
+
+1. **Look at the product's real world:** photos of the place, the objects, the materials and the people who use it (the restaurant's wood, steel, steam and tickets). Pull tones from those.
+2. **Look at the category:** what competitors use and which colors the category already owns. Decide whether to fit in (trust) or stand apart (memorability).
+3. **Check meanings:** cultural and industry associations, and the semantic colors the product will need (red, green, yellow, blue).
+4. **Propose 2-3 palettes**, each with a name, the mood it gives, a role for every color (background, surface, text, primary, accent) and a sample on a real section. Let the user pick before building.
+
+Tools: colordrop.io (curated palettes with hex codes, generator, image scanner), uicolors.app (ramps), oklch.com.
+
 ## 2. One primary color and its ramp
 
 - **Default:** one primary color, usually the brand color.
@@ -110,5 +121,46 @@ To make a color-themed version of any neutral palette: for each neutral, convert
 For brand-driven sites, the palette can come from imagery instead of a single brand color:
 - Pull tones from the moody images you've chosen (e.g. earthy tones for a restaurant).
 - Add a few accent colors that work with that palette.
+- Lighter shades for backgrounds, darker shades for text and primary buttons. Save the most saturated color for accents and the CTA.
+- Test the palette on real screens and in dark mode before committing.
+
+### Harmony schemes (where the accents come from)
+
+| Scheme | Built from | Feel |
+|---|---|---|
+| Monochromatic | Lighter and darker versions of one hue | Cohesive, calm, premium |
+| Analogous | Neighbors on the wheel | Natural, warm or cool as a whole |
+| Complementary | Opposites on the wheel | Strong contrast; good for a CTA pop |
+| Split-complementary | A base plus the two neighbors of its complement | Contrast with less tension |
+| Triadic | Three evenly spaced hues, one dominant | Playful, energetic |
+| Tetradic | Four hues in a square | High contrast, hardest to balance |
+
+### Palette starting points by mood
+
+From Figma's 100 combinations. Use them as a starting direction, then tune to the product's real world.
+
+| Mood | Combinations (colors) | Suits |
+|---|---|---|
+| Earthy | Chocolate truffle (dark brown, caramel, cream), Burnt sienna (terracotta, beige, sand), Spiced chai (cream, cinnamon, nutmeg), Desert mirage (sand, terracotta, sage) | Food, cafés, wellness, travel, interiors |
+| Neutral premium | Ink wash (charcoal, cool grey, ivory), Stone path (warm greys, brown), Quiet luxury (champagne, soft pink, muted brown), Urban loft (concrete grey, brick red, black) | Portfolios, architecture, luxury, real estate |
+| Calm | Frozen lake (slate, icy blue, snow white), Eucalyptus grove (dusty sage, grey, off-white), Mountain mist (slate, misty blue, pine) | Health, meditation, professional services |
+| Romantic | Evening rose (dusty rose, mauve, plum), Tuscan sunset (terracotta, peach, dusty lavender), Golden hour (amber, pale gold, mauve pink) | Fashion, weddings, photography, lifestyle |
+| Playful | Retro sunset (burnt orange, mustard, teal), Bubblegum pop (pink, teal, white), Watermelon burst (watermelon red, lemon green, charcoal) | Kids, food, vintage brands, consumer apps |
+| Vibrant | Neon noir (black, neon green, electric violet), Pop art (electric blue, hot pink, neon yellow), Jewelry box (sapphire, emerald, amethyst) | Gaming, music, agencies, galleries |
+| Deep | Blue eclipse (midnight blue), Cobalt sky (cobalt to navy), Lush forest (forest green) | Tech, dark mode, outdoor, environment |
+
+- **Vibrant "dopamine" palettes** (saturated, neon gradients, Y2K) are a 2026 trend for lifestyle, beauty and youth brands (Lush, Headspace, Starface). Off-brand for a bank or a hospital.
+
+## Color grading the imagery
+
+The images carry most of a marketing site's color, so grade them as one set.
+
+- **Correct first, then grade:** fix exposure and white balance, then apply the look in a separate pass.
+- **Start from a reference** (the moody hero image) and carry its grade across every photo, so they look like one shoot.
+- **Mood:** cool blues and teals read as distance or tension; warm ambers and oranges as nostalgic or adventurous; desaturated greens as clinical or dystopian; high-contrast reds as urgent.
+- **Shift hue rather than pushing saturation.** Over-saturated grades are the fastest way to look fake.
+- **Keep grades subdued behind text** so contrast holds.
+
+Sources: https://www.figma.com/fr-fr/resource-library/combinaisons-de-couleurs/, https://www.figma.com/resource-library/color-grading/, https://www.figma.com/fr-fr/resource-library/tendances-web-design/, https://colordrop.io/
 
 Full process: `identity-and-site-building.md`. Contrast requirements: `accessibility.md`. Dark mode: `dark-mode.md`.

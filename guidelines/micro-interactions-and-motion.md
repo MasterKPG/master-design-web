@@ -59,6 +59,8 @@ Micro-interactions range from highly practical to fun and playful. Pick the ones
 
 Animation is almost always an afterthought. Treat it instead as part of the brand: fluid, engaging interactions that feel like they belong to the identity.
 
+The hero's scroll technique comes from the catalog in `hero-and-scroll-motion.md`. The bookend below is a good entry in it; use it when it fits, not on every build by habit. Match the tempo to the brand: smooth and calm for luxury, lively for playful brands.
+
 ### Build a motion identity: pick themes and repeat them
 
 - **Example: Amigo AI.** Two main motion themes form its animation identity:
@@ -70,7 +72,7 @@ Animation is almost always an afterthought. Treat it instead as part of the bran
 
 When you apply motion, think about directing the eye and the focal point.
 
-**Example: bookends (hero and CTA)**
+**Example: bookends (hero and CTA), the pull-away option**
 
 1. On landing, the focal point is the hero's header text.
 2. When the user scrolls, there's a hard break between the hero and the next section.

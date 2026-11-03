@@ -23,6 +23,31 @@ This is the workflow for brand-driven sites: landing pages, marketing sites, pro
 
 The order matters less than doing the work. The default is **identity first**, so the flow and the wireframe are built on the identity rather than the identity bent to fit the wireframe.
 
+There are **two validation gates**: the user approves the plan (Step 0) and the brand identity folder (end of Step 1) before any page gets built. Never skip them to save time; rebuilding a finished site on the wrong identity costs far more.
+
+### Step 0: Ask, research, propose
+
+**New project.** Ask in one round, multiple choice where possible, so the user answers quickly:
+
+1. What is the product, who is it for, and what is the one action the page should get?
+2. Three words for the feeling (e.g. warm, precise, playful).
+3. Sites they like and dislike, and why.
+4. Existing assets: logo, colors, fonts, photos, product screenshots.
+5. Proof they really have: known customer logos, testimonials, numbers, press (decides `social-proof-and-logos.md`).
+6. Pages and sections they expect; light, dark or both.
+7. Motion appetite: calm, expressive, or somewhere between.
+8. Constraints: stack, font licenses, languages, accessibility needs, deadline.
+
+Then **research** the product's world and category: its real environment, competitors, and the palette of the item or service (`color.md`, research the palette). Then **propose the build** and wait for a yes:
+
+- 2-3 palette options with their mood, and the type direction.
+- The hero layout and its scroll technique (`hero-and-scroll-motion.md`).
+- The proof form (`social-proof-and-logos.md`).
+- The nav and footer forms (`navigation-and-footers.md`).
+- The section flow, one plain sentence per section, in order (a storyboard of the scroll).
+
+**Existing project.** Review it first and be blunt. Give a ranked list in three groups: **keep**, **improve** (what and how) and **remove** (what and why). No hedging, no softening: if the hero is generic or the logo band is dead weight, say so. Then propose the changes and wait for a yes.
+
 ### Step 1: Visual identity
 
 Escape bright, sterile light modes and flat, typical dark modes.
@@ -34,6 +59,27 @@ Escape bright, sterile light modes and flat, typical dark modes.
 5. **Choose type that fits the feeling.** Default to one sans; for restaurants, mixing in a serif adds personality, like a printed menu. A monospace that doesn't fit the identity should go.
 6. **Draw a few icons in the accent colors** to represent the product's main features.
 7. **Add images of people.** This works for any site, since the end goal is usually to reach people. Finish with the logo mark.
+8. **Grade the images as one set** (`color.md`, color grading). Consider one cinemagraph from the moody image (`hero-and-scroll-motion.md`).
+
+#### The brand identity folder (gate 2)
+
+Put the identity in a `brand/` folder and show it to the user **before building the site**:
+
+```
+brand/
+  brand-board.html   one page showing everything below, for review
+  moodboard/         the moody image + 4-6 images with the same vibe (with sources)
+  palette.md         2-3 options at first, then the chosen one: ramp, neutrals,
+                     accents, semantic colors, contrast checks
+  type.md            fonts, size scale, a sample heading and paragraph
+  imagery/           textures, people, the grade notes
+  icons/             feature icons in the accent colors
+  logo/              mark and wordmark
+  motion.md          hero technique and the 1-2 repeating motion themes
+  voice.md           the heading, tone, words to avoid
+```
+
+Wait for the user's validation. Change the folder, not the site, until they say yes.
 
 ### Step 2: Message and site flow
 
@@ -48,12 +94,12 @@ Build the skeleton by borrowing section ideas from different reference sites and
 **Restaurant example:**
 
 1. **Hero** (based on Actual): instead of laptops and keyboards, scatter restaurant items (pots, pans, measuring spoons, spatulas) to show who the product is for.
-2. **Logo strip:** a quick, subtle, small ribbon of logos (restaurant logos, technology logos, whatever fits), rotating like Better Stack's.
+2. **Social proof:** one option is a quick, subtle ribbon of logos (restaurant logos, technology logos) rotating like Better Stack's. Others fit this identity as well or better: restaurant names printed on the order tickets scattered in the hero, or logos beside short owner quotes. Choose from `social-proof-and-logos.md`; skip it if the logos are unknown.
 3. **How it works:** similar to Actual's "Superpowered" section, but less step-like and with much bigger images. Use the background images to reinforce who would use the product.
 4. **Features:** as simple and visual as possible. No paragraphs, more images of the features working. Built as a section where the user chooses which feature to see (Miro's full-screen color tabs, with a bigger image and ~90% less text).
 5. **Extra social proof:** testimonials (Attio-style), made less blocky.
 6. **CTA:** like Wise: heavy, bold, tight type, an image as the background, left-aligned.
-7. **Footer.**
+7. **Footer:** chosen from `navigation-and-footers.md` (for a restaurant: a reveal footer over a cinemagraph of the pass, or a small centered one if there are few links). Same for the nav.
 
 ### Step 4: Build section by section
 
@@ -85,7 +131,7 @@ Apply the identity to the wireframe. Once the wireframe and identity exist, this
 
 ### Step 5: Motion
 
-Add motion last, as part of the identity: repeated themes and eye direction. See `micro-interactions-and-motion.md`.
+Add motion last, as part of the identity: the hero technique approved in Step 0 (`hero-and-scroll-motion.md`), repeated themes and eye direction (`micro-interactions-and-motion.md`).
 
 ---
 

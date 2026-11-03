@@ -12,13 +12,15 @@ Restart Claude Code and check that `master-design-web` appears under `/skills`. 
 
 ## Built with this skill
 
-Each example below was made from a single prompt.
+Each example below was made from a single prompt. They're grouped by the release of the skill they were built with.
 
-### "build me a landing page for a restaurant software"
+### [v1](https://github.com/MasterKPG/master-design-web/releases/tag/v1)
+
+#### "build me a landing page for a restaurant software"
 
 **[See the live page →](https://masterkpg.github.io/master-design-web/restaurant-software-example/)** · [source](restaurant-software-example/)
 
-### "build me a landing page for a web design agency. use one font only."
+#### "build me a landing page for a web design agency. use one font only."
 
 **[See the live page →](https://masterkpg.github.io/master-design-web/web-design-agency-example/)** · [source](web-design-agency-example/)
 
@@ -27,7 +29,8 @@ Each example below was made from a single prompt.
 ```
 SKILL.md                 process, core principles, checklist, file index
 guidelines/              detailed rules (hierarchy, layout, type, color, dark mode,
-                         shadows/overlays, icons/states, motion, components,
+                         shadows/overlays, icons/states, motion, hero scroll
+                         motion, social proof, nav and footers, components,
                          accessibility, identity workflow, landing pages,
                          dashboards, mobile apps, UX thinking, vibe-coding tells,
                          presenting designs)
