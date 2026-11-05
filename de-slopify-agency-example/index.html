@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>De-slopify: we redesign websites that look AI-made</title>
+  <meta name="description" content="A small studio that redesigns vibe-coded websites around real photos and copy your customers believe. Send your URL for a free teardown.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231c1b19'/%3E%3Cpath d='M6 19c6-4 13-5 20-6' stroke='%23e0442c' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Caveat:wght@500..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Sticky on scroll-up nav -->
+  <header class="nav" data-nav>
+    <div class="nav-inner">
+      <a class="logo" href="#top" aria-label="De-slopify, back to top">
+        <span>de-<span class="logo-slop">slop<svg viewBox="0 0 60 12" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2 8.5C16 5 36 4.5 58 3"/></svg></span>ify</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#tells">The tells</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li class="nav-links-cta"><a class="btn btn-primary" href="#teardown">Get a free teardown</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="#teardown">Get a free teardown</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <span>Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO: sticky scrub. The page's own product: a slop site gets marked up, cut and rebuilt -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-track" data-hero>
+        <div class="hero-stage" data-stage data-state="flag">
+          <div class="hero-copy">
+            <p class="eyebrow">Web design studio, Leeds and Lisbon</p>
+            <h1 id="hero-title" class="display">Your website looks like a prompt. <span class="hl">We fix that.</span></h1>
+            <p class="lead">We redesign vibe-coded sites around real photos and copy your customers actually believe.</p>
+
+            <form class="url-form" data-form novalidate>
+              <label for="hero-url">Your site's address</label>
+              <div class="url-row">
+                <input id="hero-url" name="url" type="text" inputmode="url" autocomplete="url" placeholder="yourshop.co.uk" aria-describedby="hero-url-msg">
+                <button class="btn btn-primary" type="submit">
+                  <span class="btn-label">Get a free teardown</span>
+                  <svg class="icon spinner" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.22-8.56"/></svg>
+                </button>
+              </div>
+              <p class="form-msg" id="hero-url-msg" aria-live="polite">A 10-minute video of us marking up your homepage. Back within 2 working days.</p>
+            </form>
+          </div>
+
+          <figure class="hero-demo" aria-labelledby="demo-caption">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="address">fernhillbikes.co.uk</span>
+              </div>
+
+              <div class="mock hero-mock" aria-hidden="true">
+                <!-- BEFORE: the vibe-coded site (emoji and gradients are the parody, on purpose) -->
+                <div class="slop">
+                  <div class="slop-glow"></div>
+                  <div class="slop-nav"><span class="slop-logo">✨ Fernhill</span><span class="slop-links"><i>Features</i><i>Pricing</i><i>About</i></span><span class="slop-btn slop-sm">Get Started</span></div>
+                  <div class="slop-hero">
+                    <span class="slop-badge cut-me">🚀 AI-powered cycling</span>
+                    <p class="slop-h cut-me">Unleash Your Ride's <span class="slop-grad">Full Potential</span></p>
+                    <p class="slop-sub cut-me">Not just a bike shop. It's a revolution in seamless, cutting-edge mobility.</p>
+                    <div class="slop-ctas cut-me"><span class="slop-btn">Get Started →</span><span class="slop-btn slop-ghost">Learn More</span></div>
+                  </div>
+                  <div class="slop-cards cut-me">
+                    <div><b>🔧</b><strong>Robust Repairs</strong><em>Elevate every journey with next-level care.</em></div>
+                    <div><b>⚡</b><strong>Seamless Service</strong><em>Elevate every journey with next-level care.</em></div>
+                    <div><b>🌍</b><strong>Scalable Rides</strong><em>Elevate every journey with next-level care.</em></div>
+                  </div>
+                  <!-- strike-throughs drawn during the "cut" pass -->
+                  <svg class="strike strike-1" viewBox="0 0 400 20" preserveAspectRatio="none"><path pathLength="1" d="M4 13C120 7 280 9 396 5"/></svg>
+                  <svg class="strike strike-2" viewBox="0 0 400 20" preserveAspectRatio="none"><path pathLength="1" d="M4 8C140 12 260 6 396 11"/></svg>
+                  <svg class="strike strike-3" viewBox="0 0 400 20" preserveAspectRatio="none"><path pathLength="1" d="M4 12C110 6 300 12 396 6"/></svg>
+                </div>
+
+                <!-- red-pen pass -->
+                <div class="ann ann-1">
+                  <svg viewBox="0 0 300 90" preserveAspectRatio="none"><path pathLength="1" d="M44 14C118-1 252 2 288 30c18 22-24 54-128 57C70 90 8 76 10 48 12 24 62 10 124 7"/></svg>
+                  <span class="ann-note">says nothing.<br>what do you sell?</span>
+                </div>
+                <div class="ann ann-2">
+                  <svg viewBox="0 0 160 40" preserveAspectRatio="none"><path pathLength="1" d="M20 8C60 0 140 2 154 16c8 12-20 22-74 22C30 38 2 30 6 18 9 9 30 5 60 4"/></svg>
+                  <span class="ann-note">you fix bikes.<br>where's the AI?</span>
+                </div>
+                <div class="ann ann-3">
+                  <svg viewBox="0 0 160 40" preserveAspectRatio="none"><path pathLength="1" d="M18 9C60 1 138 3 154 17c8 12-22 21-76 21C28 38 2 30 6 18 9 9 32 5 62 4"/></svg>
+                  <span class="ann-note">start what??</span>
+                </div>
+                <div class="ann ann-4">
+                  <svg viewBox="0 0 400 80" preserveAspectRatio="none"><path pathLength="1" d="M30 10C150-2 360 0 392 26c14 24-40 50-200 52C70 80 4 66 8 40 11 20 60 9 140 6"/></svg>
+                  <span class="ann-note">3 identical cards,<br>emoji for icons</span>
+                </div>
+                <div class="ann ann-5">
+                  <svg viewBox="0 0 120 80" preserveAspectRatio="none"><path pathLength="1" d="M108 72C92 48 60 26 14 14m0 0 16-8m-16 8 10 14"/></svg>
+                  <span class="ann-note">not one bike<br>on the page</span>
+                </div>
+
+                <!-- AFTER: the rebuilt site, wiped in like a fresh sheet -->
+                <div class="fix fern">
+                  <div class="fern-nav"><span class="fern-logo">Fernhill Bikes</span><span class="fern-links"><i>Repairs</i><i>Prices</i><i>Find us</i></span></div>
+                  <div class="fern-copy">
+                    <p class="fern-h">Bike repairs in Leeds. Back in 48 hours.</p>
+                    <p class="fern-sub">Drop it off before 10am on Chapel Street. Fixed price on every job.</p>
+                    <span class="fern-btn">Book a repair</span>
+                    <ul class="fern-prices"><li><span>Puncture</span><b>£12</b></li><li><span>Full service</span><b>£85</b></li><li><span>Wheel true</span><b>£20</b></li></ul>
+                  </div>
+                  <img class="fern-img" src="images/fernhill-workshop.jpg" alt="" width="1600" height="1067">
+                </div>
+                <div class="sheet-edge"></div>
+                <p class="stamp"><span>Shipped</span>Bookings +41% in 8 weeks</p>
+              </div>
+            </div>
+
+            <figcaption id="demo-caption" class="visually-hidden">Before: Fernhill Bikes' old site, a violet gradient page that says "Unleash your ride's full potential" with emoji icons and three identical cards. After: a workshop photo, the heading "Bike repairs in Leeds. Back in 48 hours." and a price list.</figcaption>
+
+            <div class="passes" role="group" aria-label="Show each pass of the redesign">
+              <button type="button" data-pass="flag" aria-pressed="true"><span class="pass-n">1</span>Flag the tells</button>
+              <button type="button" data-pass="cut" aria-pressed="false"><span class="pass-n">2</span>Cut the slop</button>
+              <button type="button" data-pass="build" aria-pressed="false"><span class="pass-n">3</span>Rebuild</button>
+              <span class="passes-bar" aria-hidden="true"><i></i></span>
+            </div>
+            <p class="visually-hidden" aria-live="polite" data-pass-live></p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE TELLS: specimen board, each one flips to its fix -->
+    <section class="tells" id="tells" aria-labelledby="tells-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">What we look for first</p>
+            <h2 id="tells-title" class="h2">Six tells that give a site <span class="circled">away<svg viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M30 10C90-2 186 4 194 30c6 22-40 36-100 36C34 66 4 52 8 32 12 16 50 6 104 6"/></svg></span>.</h2>
+          </div>
+          <div class="section-aside">
+            <p>Any of these can work on purpose. Used by default, they tell visitors nobody made a decision.</p>
+            <button class="btn btn-ghost" type="button" data-fix-all aria-pressed="false">Fix all six</button>
+          </div>
+        </div>
+
+        <ol class="specimens">
+          <li class="spec spec-wide reveal" data-spec>
+            <div class="spec-top"><span class="spec-n">01</span><h3>The gradient headline</h3></div>
+            <div class="spec-stage">
+              <div class="spec-slop"><p class="sp-grad">Unleash your <span>potential</span></p></div>
+              <div class="spec-fix"><p class="sp-plain">Bike repairs in Leeds. <span>Back in 48 hours.</span></p></div>
+            </div>
+            <div class="spec-foot">
+              <p class="note-slop">pretty colors, zero information</p>
+              <p class="note-fix">One promise in plain words. It's often the only line people read.</p>
+              <button class="spec-toggle" type="button" aria-pressed="false"><span class="t-fix">Show the fix</span><span class="t-slop">Show the slop</span></button>
+            </div>
+          </li>
+
+          <li class="spec reveal" data-spec>
+            <div class="spec-top"><span class="spec-n">02</span><h3>Emoji as icons</h3></div>
+            <div class="spec-stage">
+              <div class="spec-slop"><p class="sp-emoji"><span>🚀</span><span>✨</span><span>🔥</span><span>💡</span></p></div>
+              <div class="spec-fix">
+                <ul class="sp-icons">
+                  <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Repairs</li>
+                  <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>48 hours</li>
+                  <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Chapel St</li>
+                </ul>
+              </div>
+            </div>
+            <div class="spec-foot">
+              <p class="note-slop">rocket = bikes?</p>
+              <p class="note-fix">One icon set, sized to the text, each with a label.</p>
+              <button class="spec-toggle" type="button" aria-pressed="false"><span class="t-fix">Show the fix</span><span class="t-slop">Show the slop</span></button>
+            </div>
+          </li>
+
+          <li class="spec reveal" data-spec>
+            <div class="spec-top"><span class="spec-n">03</span><h3>The stock high-five</h3></div>
+            <div class="spec-stage spec-photo">
+              <div class="spec-slop"><img src="images/stock-high-five.jpg" alt="Stock photo of two office workers high-fiving over a laptop" loading="lazy" width="800" height="533"></div>
+              <div class="spec-fix"><img src="images/crumb-jars.jpg" alt="Glass jars of biscuits and cakes on a bakery shelf, each with a handwritten price tag" loading="lazy" width="1000" height="667"></div>
+            </div>
+            <div class="spec-foot">
+              <p class="note-slop">who are these people?</p>
+              <p class="note-fix">Your own shelf and prices. Shot on a phone is fine.</p>
+              <button class="spec-toggle" type="button" aria-pressed="false"><span class="t-fix">Show the fix</span><span class="t-slop">Show the slop</span></button>
+            </div>
+          </li>
+
+          <li class="spec spec-wide reveal" data-spec>
+            <div class="spec-top"><span class="spec-n">04</span><h3>Copy that sounds like copy</h3></div>
+            <div class="spec-stage">
+              <div class="spec-slop"><p class="sp-copy">Not just a bakery. It's a <b>robust, seamless</b> and <b>transformative</b> journey that empowers your mornings.</p></div>
+              <div class="spec-fix"><p class="sp-copy sp-copy-fix">Sourdough out of the oven at 7. Usually gone by 11, so pre-order the night before.</p></div>
+            </div>
+            <div class="spec-foot">
+              <p class="note-slop">a journey?? it's bread</p>
+              <p class="note-fix">Say what happens, when, and what to do about it.</p>
+              <button class="spec-toggle" type="button" aria-pressed="false"><span class="t-fix">Show the fix</span><span class="t-slop">Show the slop</span></button>
+            </div>
+          </li>
+
+          <li class="spec spec-wide reveal" data-spec>
+            <div class="spec-top"><span class="spec-n">05</span><h3>Three cards, same everything</h3></div>
+            <div class="spec-stage">
+              <div class="spec-slop">
+                <div class="sp-cards"><span></span><span></span><span></span></div>
+              </div>
+              <div class="spec-fix">
+                <div class="sp-layout">
+                  <img src="images/sharp-end-cut.jpg" alt="A barber trimming a customer's hair with clippers" loading="lazy" width="1600" height="1067">
+                  <div><b>15 min</b><span>wait right now</span></div>
+                  <div><b>£18</b><span>skin fade</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="spec-foot">
+              <p class="note-slop">same radius, same shadow, same nothing</p>
+              <p class="note-fix">Shape follows content: a photo, and the two numbers people come for.</p>
+              <button class="spec-toggle" type="button" aria-pressed="false"><span class="t-fix">Show the fix</span><span class="t-slop">Show the slop</span></button>
+            </div>
+          </li>
+
+          <li class="spec reveal" data-spec>
+            <div class="spec-top"><span class="spec-n">06</span><h3>Initials in a gradient</h3></div>
+            <div class="spec-stage">
+              <div class="spec-slop"><div class="sp-avatar"><span>TR</span><p>Tom R.<em>Verified customer</em></p></div></div>
+              <div class="spec-fix"><div class="sp-avatar sp-avatar-fix"><img src="images/face-tom.jpg" alt="" loading="lazy" width="192" height="192"><p>Tom Reid<em>Owner, Fernhill Bikes</em></p></div></div>
+            </div>
+            <div class="spec-foot">
+              <p class="note-slop">a real person? prove it</p>
+              <p class="note-fix">A face and a full name do the trust work.</p>
+              <button class="spec-toggle" type="button" aria-pressed="false"><span class="t-fix">Show the fix</span><span class="t-slop">Show the slop</span></button>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- WORK: same before three times, three different afters -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Recent rebuilds</p>
+            <h2 id="work-title" class="h2">Three befores. Spot the difference.</h2>
+          </div>
+          <div class="section-aside">
+            <p>The old sites came from the same kind of prompt, so they came out the same. Drag each one to see what the business really looks like.</p>
+          </div>
+        </div>
+
+        <div class="cases">
+          <!-- Case: Crumb & Co -->
+          <article class="case case-wide reveal">
+            <figure class="compare" style="--pos:58%">
+              <div class="mock compare-before" aria-hidden="true">
+                <div class="slop">
+                  <div class="slop-glow"></div>
+                  <div class="slop-nav"><span class="slop-logo">✨ Crumb</span><span class="slop-links"><i>Features</i><i>Pricing</i><i>About</i></span><span class="slop-btn slop-sm">Get Started</span></div>
+                  <div class="slop-hero">
+                    <span class="slop-badge">🚀 AI-powered baking</span>
+                    <p class="slop-h">Unleash Your Bread's <span class="slop-grad">Full Potential</span></p>
+                    <p class="slop-sub">Not just a bakery. It's a revolution in seamless, cutting-edge mornings.</p>
+                    <div class="slop-ctas"><span class="slop-btn">Get Started →</span><span class="slop-btn slop-ghost">Learn More</span></div>
+                  </div>
+                  <div class="slop-cards">
+                    <div><b>🥐</b><strong>Robust Loaves</strong><em>Elevate every morning with next-level flavour.</em></div>
+                    <div><b>⚡</b><strong>Seamless Crusts</strong><em>Elevate every morning with next-level flavour.</em></div>
+                    <div><b>🌍</b><strong>Scalable Flavour</strong><em>Elevate every morning with next-level flavour.</em></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mock compare-after" aria-hidden="true">
+                <div class="fix crumb">
+                  <img class="crumb-img" src="images/crumb-counter.jpg" alt="" loading="lazy" width="1600" height="1067">
+                  <div class="crumb-nav"><span class="crumb-logo">Crumb &amp; Co.</span><span class="crumb-links"><i>Today's bake</i><i>Pre-order</i><i>Find us</i></span></div>
+                  <div class="crumb-copy">
+                    <span class="crumb-open"><i></i>Open today, 7 to 3</span>
+                    <p class="crumb-h">Sourdough out at 7. Usually gone by 11.</p>
+                    <span class="crumb-btn">Pre-order for tomorrow</span>
+                  </div>
+                </div>
+              </div>
+              <div class="compare-handle" aria-hidden="true"><span><svg class="icon" viewBox="0 0 24 24"><path d="m18 8 4 4-4 4M6 8l-4 4 4 4M2 12h20"/></svg></span></div>
+              <span class="compare-tag tag-after" aria-hidden="true">After</span>
+              <span class="compare-tag tag-before" aria-hidden="true">Before</span>
+              <input class="compare-range" type="range" min="0" max="100" value="58" aria-label="Crumb and Co. before and after. Left of the divider is the new site, right is the old one." aria-valuetext="58% new site">
+              <figcaption class="visually-hidden">Before: a violet gradient page saying "Unleash your bread's full potential". After: a photo of the bakery counter with the heading "Sourdough out at 7. Usually gone by 11."</figcaption>
+            </figure>
+            <div class="case-info">
+              <p class="case-client">Crumb &amp; Co.<span>Bakery, Bristol. 3 weeks.</span></p>
+              <p class="case-stat"><b>3 → 40</b><span>pre-orders a week</span></p>
+              <p class="case-what">Warm counter photos, the bake times up front, and pre-ordering that takes two taps.</p>
+            </div>
+          </article>
+
+          <!-- Case: Sharp End -->
+          <article class="case reveal">
+            <figure class="compare" style="--pos:58%">
+              <div class="mock compare-before" aria-hidden="true">
+                <div class="slop">
+                  <div class="slop-glow"></div>
+                  <div class="slop-nav"><span class="slop-logo">✨ SharpEnd</span><span class="slop-links"><i>Features</i><i>Pricing</i><i>About</i></span><span class="slop-btn slop-sm">Get Started</span></div>
+                  <div class="slop-hero">
+                    <span class="slop-badge">🚀 AI-powered grooming</span>
+                    <p class="slop-h">Unleash Your Hair's <span class="slop-grad">Full Potential</span></p>
+                    <p class="slop-sub">Not just a barber. It's a revolution in seamless, cutting-edge style.</p>
+                    <div class="slop-ctas"><span class="slop-btn">Get Started →</span><span class="slop-btn slop-ghost">Learn More</span></div>
+                  </div>
+                  <div class="slop-cards">
+                    <div><b>✂️</b><strong>Robust Fades</strong><em>Elevate every look with next-level care.</em></div>
+                    <div><b>⚡</b><strong>Seamless Shaves</strong><em>Elevate every look with next-level care.</em></div>
+                    <div><b>🌍</b><strong>Scalable Style</strong><em>Elevate every look with next-level care.</em></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mock compare-after" aria-hidden="true">
+                <div class="fix sharp">
+                  <div class="sharp-copy">
+                    <span class="sharp-logo">Sharp End</span>
+                    <p class="sharp-h">Walk-ins till 7. Book to skip the queue.</p>
+                    <span class="sharp-wait"><i></i>Wait right now: 15 min</span>
+                    <span class="sharp-btn">Book a chair</span>
+                  </div>
+                  <img class="sharp-img" src="images/sharp-end-cut.jpg" alt="" loading="lazy" width="1600" height="1067">
+                </div>
+              </div>
+              <div class="compare-handle" aria-hidden="true"><span><svg class="icon" viewBox="0 0 24 24"><path d="m18 8 4 4-4 4M6 8l-4 4 4 4M2 12h20"/></svg></span></div>
+              <span class="compare-tag tag-after" aria-hidden="true">After</span>
+              <span class="compare-tag tag-before" aria-hidden="true">Before</span>
+              <input class="compare-range" type="range" min="0" max="100" value="58" aria-label="Sharp End Barbers before and after. Left of the divider is the new site, right is the old one." aria-valuetext="58% new site">
+              <figcaption class="visually-hidden">Before: the same violet gradient page saying "Unleash your hair's full potential". After: a dark green page with a barber at work, the heading "Walk-ins till 7. Book to skip the queue." and the current wait time.</figcaption>
+            </figure>
+            <div class="case-info">
+              <p class="case-client">Sharp End Barbers<span>Glasgow. 2 weeks.</span></p>
+              <p class="case-stat"><b>−60%</b><span>"are you open?" calls</span></p>
+            </div>
+          </article>
+
+          <!-- Case: Fernhill -->
+          <article class="case reveal">
+            <figure class="compare" style="--pos:58%">
+              <div class="mock compare-before" aria-hidden="true">
+                <div class="slop">
+                  <div class="slop-glow"></div>
+                  <div class="slop-nav"><span class="slop-logo">✨ Fernhill</span><span class="slop-links"><i>Features</i><i>Pricing</i><i>About</i></span><span class="slop-btn slop-sm">Get Started</span></div>
+                  <div class="slop-hero">
+                    <span class="slop-badge">🚀 AI-powered cycling</span>
+                    <p class="slop-h">Unleash Your Ride's <span class="slop-grad">Full Potential</span></p>
+                    <p class="slop-sub">Not just a bike shop. It's a revolution in seamless, cutting-edge mobility.</p>
+                    <div class="slop-ctas"><span class="slop-btn">Get Started →</span><span class="slop-btn slop-ghost">Learn More</span></div>
+                  </div>
+                  <div class="slop-cards">
+                    <div><b>🔧</b><strong>Robust Repairs</strong><em>Elevate every journey with next-level care.</em></div>
+                    <div><b>⚡</b><strong>Seamless Service</strong><em>Elevate every journey with next-level care.</em></div>
+                    <div><b>🌍</b><strong>Scalable Rides</strong><em>Elevate every journey with next-level care.</em></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mock compare-after" aria-hidden="true">
+                <div class="fix fern">
+                  <div class="fern-nav"><span class="fern-logo">Fernhill Bikes</span><span class="fern-links"><i>Repairs</i><i>Prices</i><i>Find us</i></span></div>
+                  <div class="fern-copy">
+                    <p class="fern-h">Bike repairs in Leeds. Back in 48 hours.</p>
+                    <p class="fern-sub">Drop it off before 10am on Chapel Street. Fixed price on every job.</p>
+                    <span class="fern-btn">Book a repair</span>
+                    <ul class="fern-prices"><li><span>Puncture</span><b>£12</b></li><li><span>Full service</span><b>£85</b></li><li><span>Wheel true</span><b>£20</b></li></ul>
+                  </div>
+                  <img class="fern-img" src="images/fernhill-workshop.jpg" alt="" loading="lazy" width="1600" height="1067">
+                </div>
+              </div>
+              <div class="compare-handle" aria-hidden="true"><span><svg class="icon" viewBox="0 0 24 24"><path d="m18 8 4 4-4 4M6 8l-4 4 4 4M2 12h20"/></svg></span></div>
+              <span class="compare-tag tag-after" aria-hidden="true">After</span>
+              <span class="compare-tag tag-before" aria-hidden="true">Before</span>
+              <input class="compare-range" type="range" min="0" max="100" value="58" aria-label="Fernhill Bikes before and after. Left of the divider is the new site, right is the old one." aria-valuetext="58% new site">
+              <figcaption class="visually-hidden">Before: the same violet gradient page again, saying "Unleash your ride's full potential". After: a bike workshop photo with fixed prices for repairs.</figcaption>
+            </figure>
+            <div class="case-info">
+              <p class="case-client">Fernhill Bikes<span>Leeds. 4 weeks.</span></p>
+              <p class="case-stat"><b>+41%</b><span>online bookings in 8 weeks</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <div class="wrap process-grid">
+        <div class="process-photo reveal">
+          <img src="images/studio-wall.jpg" alt="Our team around a table, one person sticking notes on the wall while planning a client's homepage" loading="lazy" width="1400" height="933">
+          <p class="photo-note">Friday wall review. Every sticky note is a section someone has to defend.</p>
+        </div>
+        <div class="process-copy">
+          <div class="reveal">
+            <p class="eyebrow">How a rebuild runs</p>
+            <h2 id="process-title" class="h2">From slop to shipped in <span class="hl">four weeks</span>.</h2>
+          </div>
+          <ol class="steps" data-steps>
+            <svg class="steps-line" viewBox="0 0 12 400" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M6 2C8 80 4 160 7 240S5 360 6 398"/></svg>
+            <li class="step reveal">
+              <p class="step-when">Day 1</p>
+              <h3>Teardown</h3>
+              <p>We record ten minutes of red-pen notes on your homepage. Free, and yours to keep even if you never hire us.</p>
+            </li>
+            <li class="step reveal">
+              <p class="step-when">Week 1</p>
+              <h3>Identity board</h3>
+              <p>Photos of your actual place, a palette taken from them, type and a voice. You approve it before we design a single section.</p>
+            </li>
+            <li class="step reveal">
+              <p class="step-when">Weeks 2 and 3</p>
+              <h3>Rebuild</h3>
+              <p>Section by section, in your stack or a plain static site. A live link every Friday so nothing surprises you.</p>
+            </li>
+            <li class="step reveal">
+              <p class="step-when">Week 4</p>
+              <h3>Launch and hand-off</h3>
+              <p>We ship it, walk you through editing it, and hand over the code. No retainer unless you ask for one.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF: named people with outcomes -->
+    <section class="voices" aria-labelledby="voices-title">
+      <div class="wrap">
+        <h2 id="voices-title" class="visually-hidden">What clients say</h2>
+        <div class="voices-grid">
+          <figure class="quote quote-big reveal">
+            <blockquote><p>Our old site said we unleash potential. We fix punctures. Now it says that, and the phone rings.</p></blockquote>
+            <figcaption>
+              <img src="images/face-tom.jpg" alt="" loading="lazy" width="192" height="192">
+              <span><b>Tom Reid</b>Owner, Fernhill Bikes</span>
+              <span class="quote-stat">+41% bookings</span>
+            </figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote><p>People used to ask if we were a crypto thing. Now they ask if the rye is still there.</p></blockquote>
+            <figcaption>
+              <img src="images/face-hana.jpg" alt="" loading="lazy" width="192" height="192">
+              <span><b>Hana Okafor</b>Crumb &amp; Co.</span>
+            </figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote><p>I didn't know I had a brand. Turns out it's dark green and smells of bay rum.</p></blockquote>
+            <figcaption>
+              <img src="images/face-kwame.jpg" alt="" loading="lazy" width="192" height="192">
+              <span><b>Kwame Mensah</b>Sharp End Barbers</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" aria-labelledby="team-title">
+      <div class="wrap team-grid">
+        <div class="reveal">
+          <p class="eyebrow">The studio</p>
+          <h2 id="team-title" class="h2">Three people. One red pen, which we share badly.</h2>
+        </div>
+        <ul class="people">
+          <li class="person reveal">
+            <img src="images/person-ana.jpg" alt="Ana Ferreira" loading="lazy" width="480" height="600">
+            <p><b>Ana Ferreira</b>Design lead, Lisbon</p>
+            <p class="person-fact">Has deleted 1,214 "Get started" buttons.</p>
+          </li>
+          <li class="person reveal">
+            <img src="images/person-joe.jpg" alt="Joe Hartley" loading="lazy" width="480" height="600">
+            <p><b>Joe Hartley</b>Build, Leeds</p>
+            <p class="person-fact">Ships sites that load before the kettle boils.</p>
+          </li>
+          <li class="person reveal">
+            <img src="images/person-priya.jpg" alt="Priya Nair" loading="lazy" width="480" height="600">
+            <p><b>Priya Nair</b>Words and photos, Leeds</p>
+            <p class="person-fact">Bans "seamless" on sight.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Pricing</p>
+            <h2 id="pricing-title" class="h2">Start free. Pay once if you want the rebuild.</h2>
+          </div>
+        </div>
+        <div class="plans">
+          <article class="plan reveal">
+            <div class="plan-top">
+              <h3 class="plan-name">Teardown</h3>
+              <p class="plan-price"><b>£0</b></p>
+              <p class="plan-desc">A 10-minute video of us marking up your homepage, plus the list of every tell we found.</p>
+              <a class="btn btn-outline" href="#teardown">Get a free teardown</a>
+            </div>
+            <ul class="plan-list">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Back within 2 working days</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fixes ranked by how much they matter</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>No call, no follow-up emails</li>
+              <li class="no"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Design or build work</li>
+            </ul>
+          </article>
+          <article class="plan plan-main reveal">
+            <div class="plan-top">
+              <h3 class="plan-name">Rebuild</h3>
+              <p class="plan-price"><b>£7,400</b><span>fixed price</span></p>
+              <p class="plan-desc">Identity board and a rebuilt site of up to 6 sections, in four weeks.</p>
+              <a class="btn btn-outline" href="mailto:hello@de-slopify.example?subject=Rebuild">Book a 20-minute call</a>
+              <p class="plan-note">Half at the start, half at launch.</p>
+            </div>
+            <ul class="plan-list">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Everything in the teardown</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Half a day of photos at your place</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Copy written with you, not for you</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>30 days of fixes after launch</li>
+              <li class="no"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>Monthly retainer (ask if you want one)</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="faq reveal">
+          <h3 class="faq-title">Before you ask</h3>
+          <details>
+            <summary>Do you use AI?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary>
+            <p>For dull jobs like resizing images and checking contrast. Every decision you see on the page was made by one of us, and we'll tell you why.</p>
+          </details>
+          <details>
+            <summary>Can you keep my Webflow, Framer or Next.js site?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary>
+            <p>Yes. We rebuild in whatever you already pay for. If you have nothing, we hand over a plain static site you can host for free.</p>
+          </details>
+          <details>
+            <summary>What if I don't have good photos?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary>
+            <p>Priya comes and takes them. Half a day is included in the rebuild. Phone shots of the real place still beat any stock photo.</p>
+          </details>
+          <details>
+            <summary>What happens after the free teardown?<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></summary>
+            <p>Nothing, unless you write back. Plenty of people fix the list themselves, and that's fine by us.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA + footer -->
+    <section class="cta" id="teardown" aria-labelledby="cta-title">
+      <img class="cta-bg" src="images/red-marker.jpg" alt="" loading="lazy" width="1800" height="1200">
+      <div class="wrap cta-inner">
+        <h2 id="cta-title" class="cta-h reveal">Send us the URL. We'll bring the <span class="cta-pen">red pen<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M4 20C70 10 180 8 296 14"/></svg></span>.</h2>
+        <form class="url-form cta-form reveal" data-form novalidate>
+          <div class="field">
+            <label for="cta-url">Your site's address</label>
+            <input id="cta-url" name="url" type="text" inputmode="url" autocomplete="url" placeholder="yourshop.co.uk" aria-describedby="cta-url-msg">
+          </div>
+          <div class="field">
+            <label for="cta-email">Where we send the video</label>
+            <input id="cta-email" name="email" type="email" autocomplete="email" placeholder="you@yourshop.co.uk" aria-describedby="cta-url-msg">
+          </div>
+          <button class="btn btn-primary btn-light" type="submit">
+            <span class="btn-label">Get a free teardown</span>
+            <svg class="icon spinner" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.22-8.56"/></svg>
+          </button>
+          <p class="form-msg" id="cta-url-msg" aria-live="polite">Ana or Joe records it. Back within 2 working days.</p>
+        </form>
+        <div class="cta-proof reveal">
+          <span class="faces" aria-hidden="true"><img src="images/face-tom.jpg" alt="" loading="lazy" width="192" height="192"><img src="images/face-hana.jpg" alt="" loading="lazy" width="192" height="192"><img src="images/face-kwame.jpg" alt="" loading="lazy" width="192" height="192"></span>
+          <p><b>212 teardowns</b> sent this year. 38 became rebuilds.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-top">
+      <ul class="footer-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="mailto:hello@de-slopify.example">hello@de-slopify.example</a></li>
+      </ul>
+      <ul class="footer-links footer-social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+    <div class="wrap footer-meta">
+      <p>© 2026 De-slopify Ltd. Leeds and Lisbon.</p>
+      <p>Every line here was written by a person, then half of it was struck out by another.</p>
+    </div>
+    <p class="wordmark" aria-hidden="true">de-<span>slop<svg viewBox="0 0 300 40" preserveAspectRatio="none"><path pathLength="1" d="M6 28C90 18 200 14 294 8"/></svg></span>ify</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Photo credits, Wikimedia Commons. Required by the CC licences. */
+window.CREDITS = [
+ {
+  "file": "hero-12cilindri",
+  "title": "File:Ferrari 12Cilindri Spider Auto Zuerich 2024 DSC 6393.jpg",
+  "artist": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_12Cilindri_Spider_Auto_Zuerich_2024_DSC_6393.jpg"
+ },
+ {
+  "file": "hero-12cilindri-b",
+  "title": "File:Ferrari 12Cilindri Spider Auto Zuerich 2024 DSC 6809.jpg",
+  "artist": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_12Cilindri_Spider_Auto_Zuerich_2024_DSC_6809.jpg"
+ },
+ {
+  "file": "ferrari-sf90",
+  "title": "File:Ferrari SF90 Spider IMG 9250.jpg",
+  "artist": "Alexander-93",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_SF90_Spider_IMG_9250.jpg"
+ },
+ {
+  "file": "ferrari-296",
+  "title": "File:Ferrari 296 GTB DSC 6997.jpg",
+  "artist": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Ferrari_296_GTB_DSC_6997.jpg"
+ },
+ {
+  "file": "lambo-revuelto",
+  "title": "File:Lamborghini Revuelto MYLE Festival 2025 DSC 9447 (cropped).jpg",
+  "artist": "Alexander Migl",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Revuelto_MYLE_Festival_2025_DSC_9447_(cropped).jpg"
+ },
+ {
+  "file": "lambo-revuelto-stage",
+  "title": "File:Lamborghini Revuelto Opera Unica 002.jpg",
+  "artist": "JustAnotherCarDesigner",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Revuelto_Opera_Unica_002.jpg"
+ },
+ {
+  "file": "mclaren-750s",
+  "title": "File:2023 McLaren 750S Yellow.jpg",
+  "artist": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023_McLaren_750S_Yellow.jpg"
+ },
+ {
+  "file": "aston-db12",
+  "title": "File:Aston MArtin DB12, Auto 2025, Zurich (20251029-P1073709).jpg",
+  "artist": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Aston_MArtin_DB12,_Auto_2025,_Zurich_(20251029-P1073709).jpg"
+ },
+ {
+  "file": "bugatti-chiron",
+  "title": "File:Bugatti Chiron 2019.jpg",
+  "artist": "MrWalkr",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bugatti_Chiron_2019.jpg"
+ },
+ {
+  "file": "koenigsegg-regera",
+  "title": "File:Regera (light gradient).png",
+  "artist": "Aab254",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Regera_(light_gradient).png"
+ },
+ {
+  "file": "koenigsegg-jesko",
+  "title": "File:Koenigsegg, Auto 2024, Zurich (PANA0940).jpg",
+  "artist": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Koenigsegg,_Auto_2024,_Zurich_(PANA0940).jpg"
+ },
+ {
+  "file": "rr-spectre",
+  "title": "File:2023 Rolls-Royce Spectre EV - 102kWh (585PS) Electric - Wittering Blue - 06-2024, Side.jpg",
+  "artist": "Harvey Bold",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:2023_Rolls-Royce_Spectre_EV_-_102kWh_(585PS)_Electric_-_Wittering_Blue_-_06-2024,_Side.jpg"
+ },
+ {
+  "file": "rr-cullinan",
+  "title": "File:ROLLS ROYCE CULLINAN China (2).jpg",
+  "artist": "Dinkun Chen",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:ROLLS_ROYCE_CULLINAN_China_(2).jpg"
+ },
+ {
+  "file": "maserati-mc20",
+  "title": "File:Maserati MC20 (53060861852-crop).jpg",
+  "artist": "Alexandre Prevot from Nancy, France",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Maserati_MC20_(53060861852-crop).jpg"
+ },
+ {
+  "file": "maybach-s680",
+  "title": "File:Mercedes-Maybach Z223 S 680 Obsidian Black (26).jpg",
+  "artist": "Damian B Oh",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Maybach_Z223_S_680_Obsidian_Black_(26).jpg"
+ },
+ {
+  "file": "g63",
+  "title": "File:Mercedes-Benz G-Class W463 II 63 AMG Sanming 01 2022-08-02.jpg",
+  "artist": "JamesYoung8167",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_G-Class_W463_II_63_AMG_Sanming_01_2022-08-02.jpg"
+ },
+ {
+  "file": "mansory-g",
+  "title": "File:Mercedes G63 Mansory P720.jpg",
+  "artist": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mercedes_G63_Mansory_P720.jpg"
+ },
+ {
+  "file": "brabus-g",
+  "title": "File:Brabus G Class 800 1.jpg",
+  "artist": "Calreyn88",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Brabus_G_Class_800_1.jpg"
+ },
+ {
+  "file": "monaco-dusk",
+  "title": "File:Monte Carlo (94680805).jpg",
+  "artist": "Herry Lawford from Stockbridge, UK",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Monte_Carlo_(94680805).jpg"
+ },
+ {
+  "file": "monaco-night",
+  "title": "File:Monte Carlo (93927772).jpg",
+  "artist": "Herry Lawford from Stockbridge, UK",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Monte_Carlo_(93927772).jpg"
+ },
+ {
+  "file": "rr-interior",
+  "title": "File:Rolls Royce Cullinan Interior.jpg",
+  "artist": "Kārlis Dambrāns",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Rolls_Royce_Cullinan_Interior.jpg"
+ }
+];

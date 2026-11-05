@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Calder · Supercar and luxury car hire in Monaco, Geneva and London</title>
+  <meta name="description" content="Rent a Ferrari, Lamborghini, McLaren, Bugatti, Koenigsegg, Rolls-Royce or Maybach by the day or the week. Delivered to your hotel, home or private terminal in Monaco, Geneva and London.">
+  <meta name="theme-color" content="#0c0c0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c0c0a'/%3E%3Cpath d='M8 21.5h16' stroke='%23b88a5c' stroke-width='2'/%3E%3Cpath d='M8 15.5h16' stroke='%23ece6da' stroke-width='2'/%3E%3Cpath d='M8 9.5h16' stroke='%23ece6da' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero-12cilindri.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Navigation: transparent over the hero, solid once the hero is gone -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="wordmark" href="#top" aria-label="Calder, back to top">CALDER</a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#collection">Collection</a>
+        <a href="#ateliers">Ateliers</a>
+        <a href="#handover">How it works</a>
+        <a href="#locations">Locations</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--ghost btn--sm" href="#reserve"><span class="btn__label" data-label="Reserve a car"><span>Reserve a car</span></span></a>
+        <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="nav__menu-lines" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#collection">Collection</a>
+      <a href="#ateliers">Ateliers</a>
+      <a href="#handover">How it works</a>
+      <a href="#locations">Locations</a>
+      <a href="#reserve">Reserve a car</a>
+    </nav>
+    <p class="menu__foot">Concierge, every day 08:00 to 23:00<br><a href="tel:+37700000000">+377 00 00 00 00</a></p>
+  </div>
+
+  <main id="main">
+    <!-- 1. HERO: framed image expands to full bleed on scroll -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__stage">
+        <div class="hero__copy wrap">
+          <p class="label">Monaco · Geneva · London</p>
+          <h1 class="display h1" id="hero-title">From Ferrari to Koenigsegg, delivered to&nbsp;you.</h1>
+          <div class="hero__row">
+            <p class="lead hero__sub">Forty-two cars, by the day or the week. Insured, detailed and handed over in person.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--primary" href="#reserve"><span class="btn__label" data-label="Reserve a car"><span>Reserve a car</span></span></a>
+              <a class="link-arrow" href="#collection">See the collection <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero__media">
+          <img src="img/hero-12cilindri.webp" alt="A dark green Ferrari 12Cilindri Spider on a black stand, lit from the front" width="2400" height="1395" fetchpriority="high">
+          <figcaption class="hero__caption wrap">
+            <span class="avail"><span class="dot" aria-hidden="true"></span>In the Monaco garage today</span>
+            <span class="hero__car">Ferrari 12Cilindri Spider</span>
+            <span class="spec">830 hp · 0–100 km/h 2.9 s · V12</span>
+            <a class="link-arrow" href="#reserve" data-reserve="f12">Reserve this car <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 2. MARQUES: the index of what's in the garage -->
+    <section class="marques section" id="marques" aria-labelledby="marques-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="label">The garage</p>
+          <h2 class="display h2" id="marques-title">Every car is ours, kept in our own&nbsp;garages.</h2>
+          <p class="section__intro">We don't broker other people's cars. Each one is serviced, insured and detailed by our team before it leaves.</p>
+        </div>
+        <ol class="index" id="marque-index"><!-- rendered by main.js --></ol>
+      </div>
+      <div class="peek" id="peek" aria-hidden="true"><img alt=""></div>
+    </section>
+
+    <!-- 3. COLLECTION: filterable cars -->
+    <section class="collection section" id="collection" aria-labelledby="collection-title">
+      <div class="wrap">
+        <div class="collection__head">
+          <div>
+            <p class="label">The collection</p>
+            <h2 class="display h2" id="collection-title">Choose by the drive you&nbsp;want.</h2>
+          </div>
+          <p class="collection__count" id="count" aria-live="polite"></p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter the collection" id="filters">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-filter="super" aria-pressed="false">Supercars</button>
+          <button type="button" class="chip" data-filter="hyper" aria-pressed="false">Hypercars</button>
+          <button type="button" class="chip" data-filter="gt" aria-pressed="false">Grand tourers</button>
+          <button type="button" class="chip" data-filter="chauffeur" aria-pressed="false">Chauffeur &amp; SUV</button>
+          <button type="button" class="chip" data-filter="atelier" aria-pressed="false">Ateliers</button>
+          <button type="button" class="chip chip--marque" id="marque-chip" hidden><span></span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+        </div>
+        <ul class="grid" id="grid"><!-- rendered by main.js --></ul>
+        <div class="collection__more">
+          <button type="button" class="btn btn--ghost" id="more" hidden><span class="btn__label" data-label=""><span></span></span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ATELIERS: Mansory and Brabus -->
+    <section class="ateliers section section--paper" id="ateliers" aria-labelledby="ateliers-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="label">Ateliers</p>
+          <h2 class="display h2" id="ateliers-title">Mansory and Brabus, kept to factory&nbsp;schedules.</h2>
+        </div>
+      </div>
+      <div class="wrap ateliers__grid">
+        <div class="ateliers__copy">
+          <p>A tuned car is only as good as its upkeep. Ours go back to the tuner for every service, run on the tyres they were set up for and carry their build sheet in the glovebox.</p>
+          <dl class="specs">
+            <div><dt>Brabus 800</dt><dd>G-Class · 800 hp · London</dd></div>
+            <div><dt>Mansory P720</dt><dd>G-Class · 720 hp · Monaco</dd></div>
+          </dl>
+          <a class="link-arrow" href="#collection" data-filter-link="atelier">See both cars <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <figure class="ateliers__a reveal">
+          <img src="img/brabus-g.webp" alt="Black Brabus 800 G-Class in a showroom" loading="lazy" width="1920" height="1351">
+          <figcaption>Brabus 800 · from €1,800 a day</figcaption>
+        </figure>
+        <figure class="ateliers__b reveal">
+          <img src="img/mansory-g.webp" alt="Matte black Mansory P720 G-Class with bronze wheels" loading="lazy" width="1600" height="1182">
+          <figcaption>Mansory P720 · from €2,600 a day</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 5. HANDOVER: how it works -->
+    <section class="handover section" id="handover" aria-labelledby="handover-title">
+      <div class="wrap handover__grid">
+        <figure class="handover__media reveal">
+          <img src="img/rr-interior.webp" alt="Rolls-Royce Cullinan steering wheel and tan leather dashboard" loading="lazy" width="1600" height="1067">
+        </figure>
+        <div class="handover__copy">
+          <p class="label">How it works</p>
+          <h2 class="display h2" id="handover-title">We bring the car to&nbsp;you.</h2>
+          <ol class="steps">
+            <li>
+              <span class="steps__n">01</span>
+              <div><h3>Choose the car and the day</h3><p>Reserve here or call the concierge. We confirm by phone within 20 minutes.</p></div>
+            </li>
+            <li>
+              <span class="steps__n">02</span>
+              <div><h3>We deliver it where you are</h3><p>Your hotel, your home, the marina or the private terminal. In Monaco, within 90 minutes.</p></div>
+            </li>
+            <li>
+              <span class="steps__n">03</span>
+              <div><h3>Drive, then leave the key with us</h3><p>Hand it back wherever suits you. We collect it, refuel it and clean it.</p></div>
+            </li>
+          </ol>
+          <ul class="included" aria-label="Included with every car">
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>Comprehensive insurance</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 14 4-4M3.34 19a10 10 0 1 1 17.32 0"/></svg>300 km a day</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M19 8v6M22 11h-6"/><circle cx="9" cy="7" r="4"/></svg>A second driver</li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-5.5 10.2-7.4 11.8a1 1 0 0 1-1.2 0C9.5 20.2 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>Delivery in the city</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. LOCATIONS -->
+    <section class="locations" id="locations" aria-labelledby="locations-title">
+      <figure class="locations__media reveal">
+        <img src="img/monaco-dusk.webp" alt="Monte Carlo harbour at dusk, yachts below the lit apartment blocks" loading="lazy" width="1920" height="1080">
+      </figure>
+      <div class="locations__content wrap">
+        <div class="locations__head">
+          <p class="label">Where we are</p>
+          <h2 class="display h2" id="locations-title">Garages in Monaco, Geneva and&nbsp;London.</h2>
+        </div>
+        <ul class="cities">
+          <li>
+            <h3>Monaco</h3>
+            <p class="cities__time"><time data-tz="Europe/Monaco"></time> local</p>
+            <p>Quai Antoine 1er, Port Hercule</p>
+            <p class="dim">Delivery within 90 minutes</p>
+          </li>
+          <li>
+            <h3>Geneva</h3>
+            <p class="cities__time"><time data-tz="Europe/Zurich"></time> local</p>
+            <p>Quai du Mont-Blanc</p>
+            <p class="dim">Airport and private terminal handover</p>
+          </li>
+          <li>
+            <h3>London</h3>
+            <p class="cities__time"><time data-tz="Europe/London"></time> local</p>
+            <p>Mount Street, Mayfair</p>
+            <p class="dim">Delivery within 2 hours, zones 1 to 3</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. RESERVE -->
+    <section class="reserve section" id="reserve" aria-labelledby="reserve-title">
+      <div class="wrap reserve__grid">
+        <div class="reserve__copy">
+          <p class="label">Reserve</p>
+          <h2 class="display h2" id="reserve-title">Tell us the car and the&nbsp;day.</h2>
+          <p>No payment now. A concierge calls you back within 20 minutes to confirm the car, the handover place and the deposit.</p>
+          <p class="reserve__call">Prefer to talk? <a href="tel:+37700000000">+377 00 00 00 00</a><br><span class="dim">Every day, 08:00 to 23:00</span></p>
+        </div>
+
+        <div class="panel" id="panel">
+          <form class="form" id="form" novalidate>
+            <div class="field">
+              <label for="f-car">Car</label>
+              <div class="select">
+                <select id="f-car" name="car" required aria-describedby="e-car"></select>
+                <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+              <p class="error" id="e-car" hidden></p>
+            </div>
+
+            <fieldset class="field">
+              <legend>City</legend>
+              <div class="segmented">
+                <label><input type="radio" name="city" value="Monaco" checked><span>Monaco</span></label>
+                <label><input type="radio" name="city" value="Geneva"><span>Geneva</span></label>
+                <label><input type="radio" name="city" value="London"><span>London</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-from">From</label>
+                <input type="date" id="f-from" name="from" required aria-describedby="e-from">
+                <p class="error" id="e-from" hidden></p>
+              </div>
+              <div class="field">
+                <label for="f-to">To</label>
+                <input type="date" id="f-to" name="to" required aria-describedby="e-to">
+                <p class="error" id="e-to" hidden></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" required aria-describedby="e-name">
+              <p class="error" id="e-name" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="f-contact">Phone or email</label>
+              <input type="text" id="f-contact" name="contact" autocomplete="tel" required aria-describedby="h-contact e-contact">
+              <p class="hint" id="h-contact">We only use it to confirm this booking.</p>
+              <p class="error" id="e-contact" hidden></p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit" id="submit">
+              <span class="btn__label" data-label="Request this car"><span>Request this car</span></span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <div class="done" id="done" hidden tabindex="-1">
+            <span class="done__icon" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3>Request received</h3>
+            <p id="done-summary"></p>
+            <p class="dim" id="done-next"></p>
+            <button type="button" class="link-arrow" id="edit">Change the request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: revealed from behind the page, oversized wordmark -->
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <div class="footer__col">
+        <p class="label">Visit</p>
+        <a href="#collection">Collection</a>
+        <a href="#ateliers">Ateliers</a>
+        <a href="#handover">How it works</a>
+        <a href="#locations">Locations</a>
+      </div>
+      <div class="footer__col">
+        <p class="label">Concierge</p>
+        <a href="tel:+37700000000">+377 00 00 00 00</a>
+        <a href="mailto:concierge@calder.example">concierge@calder.example</a>
+        <span class="dim">Every day, 08:00 to 23:00</span>
+      </div>
+      <div class="footer__col">
+        <p class="label">Legal</p>
+        <a href="#">Rental terms</a>
+        <a href="#">Insurance cover</a>
+        <a href="#">Privacy</a>
+        <details class="credits">
+          <summary>Photo credits</summary>
+          <ul id="credits"></ul>
+        </details>
+      </div>
+    </div>
+    <div class="wrap footer__legal">
+      <span>© 2026 Calder</span>
+      <span>Drivers must be 25 or older with five years of licence.</span>
+    </div>
+    <p class="footer__word" aria-hidden="true">CALDER</p>
+  </footer>
+
+  <script src="credits.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
