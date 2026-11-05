@@ -76,3 +76,16 @@ Typographic hierarchy is nuanced, and sizes vary wildly between products.
 - Don't repeat the company name in the copy when it's already in the logo.
 - **Pair every button with a label that says where it goes.** Two CTAs with the same destination get the same label.
 - Avoid AI copy patterns. See `vibe-coding-tells.md`.
+
+## Type and copy moves for brand-led sites
+
+From the creative set (`../examples/creative-sites-patterns.md`, section 12). Pick one or two per site, as part of the identity:
+
+- **Two voices in one headline:** a bold sans with a thin italic serif for the key words (`hex/`). This is the split-font heading above.
+- **Icons or "sticker" words inside the headline** (`scrintal/`).
+- **Product names as chips inside a sentence** (`hex/`).
+- **Headlines split across the frame** or anchored to opposite corners (`lightship-rv/`, `zentry/`).
+- **Handwritten notes that argue with the headline** (`fc88/`).
+- **Bracketed labels and indexes:** "[01] Projects", "( Hello )", "LET.27", "/001/" (`mugen-studio/`, `the-raw-materials/`, `letude/`, `trifecta/`). They fit an archive or studio identity. Like any move here, applied by reflex on every build it becomes a tell (`vibe-coding-tells.md`, the rule).
+- **Speak the customer's world:** football words for a football apparel brand, shop words for an agency run as a shop (`fc88/`, `seen-advertising/`). See `design-directions.md`, the one idea.
+- **The page can admit it's long:** "Kudos for reading this long story. Need a quick recap?" (`fc88/`).

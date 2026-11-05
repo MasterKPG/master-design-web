@@ -29,8 +29,33 @@ The hero blur/pull-away (`micro-interactions-and-motion.md`, bookends) is a good
 | **Showreel grow** | A loader resolves into a small showreel that scales to full screen as you scroll | Agencies and studios with real footage | Poster frame with a play button |
 | **Background shift** | The page color interpolates between sections as you scroll, often with the gradient themes between them | Brands with several moods or product lines | Each section keeps its own color |
 | **Cinemagraph** (no scroll needed) | A still photo where one region loops: steam from a pot, a candle, fabric. Combine with any scroll technique above | Food, hospitality, wellness, any moody identity | The still frame |
+| **Pinned headline, images rising** | A big headline stays pinned while photos or product shots rise through and past it | Consumer products and launches with several strong photos (`lightship-rv/`) | Headline, then the images in a grid |
+| **Shape straightens and grows** | The identity's shape (a tilted panel, a notch) starts small and skewed and straightens into a full-bleed section | When one shape is the identity (`zentry/`) | The section full-bleed, unskewed |
+| **Scatter that gathers** | Scattered photos or objects drift together into a group, a grid or a word as you scroll | Lifestyle and portfolio pages; a collection of objects (`lightship-rv/`, `brandappart/`) | The gathered layout |
+| **Cards that fold back** | A stacked-cards variant: the current card tips back in 3D and slides under as the next comes over it | Services, plans or steps read as a sequence (`brandappart/`) | Plain stacked cards |
+| **Pinned steps that expand** | A pinned list of 3-4 steps; the active one grows and shows its image or detail | Process sections, onboarding stories (`zentry/`, `mugen-studio/`) | All steps open |
+| **Text fills as you read** | A paragraph starts grey and fills to full color word by word with scroll | One short manifesto paragraph, once per page (`mugen-studio/`). Check the grey still passes contrast | Full-color text |
+| **Section entry bar** | A bar or counter announces the chapter: "You are now entering ( Work ) section ● 03/01" | Long one-pagers with named chapters (`the-raw-materials/`) | The section label as a heading |
+| **Rapid cuts in a fixed frame** | The wordmark or a frame stays still while the video inside it cuts fast between projects | Studios with a reel (`letude/`) | Poster frame |
+| **Marquee** | A line of promises, services or client names slides sideways; can be tilted like tape | Short repeated lines; voice-led brands (`seen-advertising/`, `brethren-design-co/`, `fc88/`). Needs a pause control | A static line |
 
 Award-winning references for these: TRIONN (3D hero, text explosion on scroll), Design by Dylan (loader and showreel that animates on scroll), Mat Voyce (kinetic type that stretches and recombines), Uncommon Studio (section transitions that read as camera moves, a grid that breaks at set moments), Iventions (each project spotlit like an installation, reveals paced as a guided walk), By-Kin (transitions that form one continuous surface), Apple product pages (sticky scrub, image sequences). Inspiration only, never copy.
+
+## Loaders and intros
+
+Most good sites have no loader (`scrintal/`, `hex/`, `colabs/`). Add one only when it says something about the brand, and keep it short.
+
+- **The mark alone:** a black screen, then only the logo for about 3 seconds before the hero takes over (`zentry/`).
+- **The product:** line drawings of the products swapping in the centre with a % counter (`fc88/`). The loader introduces the range before a word is read.
+- **The hero builds itself:** color, a photo flash, the wordmark typing letter by letter, the intro line fading in word by word (`letude/`).
+- **Carry it into the hero:** a counter can keep running from the loader into the hero ("365 → 276 days till the next season", `fc88/`).
+- Offer "Skip intro" on anything longer than a couple of seconds, show it once per visit, and skip it under reduced motion.
+
+## Watch out
+
+- An embedded 3D viewer that captures the mouse wheel stops the page from scrolling (`isomorphic-labs/`). Let the wheel pass through unless the user clicks into the viewer.
+- Builder containers with their own scrolling (Readymag) break normal scroll and keyboard navigation (`seen-advertising/`).
+- A video embed can fail and leave the hero as a black box (`brandappart/`). Always set a poster image.
 
 ## Cinemagraph recipe
 
@@ -57,3 +82,4 @@ Award-winning references for these: TRIONN (3D hero, text explosion on scroll), 
 - Hero fade with `animation-range`: https://www.builder.io/blog/scroll-driven-animations
 - Award winners: https://www.awwwards.com/sites/trionn-2, https://www.awwwards.com/sites/c-design-by-dylan, https://www.hontran.dev/blog/best-award-winning-websites-2026
 - Zoom hero and pinned video patterns: https://framespark.io/blog/best-10-scroll-animations-in-framer, https://21st.dev/@ajith66310/components/hero-scroll-video-pin-reveal
+- Creative sites set (captured 2026-11-05): `../examples/creative-sites-patterns.md`, sections 4 and 6

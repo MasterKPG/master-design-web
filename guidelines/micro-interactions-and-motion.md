@@ -94,6 +94,28 @@ When you apply motion, think about directing the eye and the focal point.
 - **Animate the text itself** to tell the story (Reboot, Apple's Mac mini page): "deadlines" becomes a progress bar that fills and rises away; "paid" turns into bouncing dollar signs. The goal isn't complexity; it's drawing attention to the text because it moves.
 - Small hover interactions on almost everything keep a simple site from feeling bland.
 
+### Hover styles: one per kind of element
+
+On brand-led sites the hover is part of the identity. The defaults from the creative set:
+
+- **One hover style per kind of element, used everywhere.** All nav links behave alike, all cards alike, all buttons alike.
+- **Fast:** 0.15-0.4s, eased.
+- **The change says something about the brand:** it reuses the identity's shape or rhythm.
+- Hover is a bonus. Everything it reveals must also be reachable by keyboard focus and on touch (`accessibility.md`).
+
+| Effect | Fits | Seen in |
+|---|---|---|
+| Rectangle rounds into a pill | A cell or grid identity | `isomorphic-labs/` |
+| Pill tilts in 3D into the brand's shape | A one-shape identity | `zentry/` |
+| Text rolls up and is replaced by a colored copy, sometimes with new words ("Book a call" → "Ready for a chat?") | Type-led agencies; a playful voice | `trifecta/` |
+| A letter expands into the full word | Edge tabs, minimal studios | `letude/` |
+| Icon square fills, icon goes solid, label slides out | Icon sidebars | `brandappart/` |
+| The rest blurs, the item blooms into a preview in its own style | One-screen hubs with few items | `pixelwrld/` |
+| Letters turn to outline where the cursor passes | Big display type, studios | `selfaware-studio/` |
+| Selection handles around the CTA disappear on hover | Design and canvas tools (the product's own UI) | `hex/` |
+| The hovered list row turns white or yellow and shows its image or logo | Services and client lists | `mugen-studio/`, `zentry/` |
+| Logo or link flips to the brand color | Any identity; the quiet option | `nocodesupply/`, `brethren-design-co/`, `colabs/` |
+
 ### Motion direction has meaning
 
 - Sliding up from the bottom = a temporary action (a sheet, a tool panel).
@@ -107,3 +129,5 @@ On dashboards and app screens, motion is user-focused feedback: hovers, presses,
 ## Respect reduced motion
 
 Every animation needs a calm fallback for users who ask for reduced motion. See `accessibility.md`.
+
+Creative sites set (hover and scroll patterns): `../examples/creative-sites-patterns.md`, sections 5 and 6.

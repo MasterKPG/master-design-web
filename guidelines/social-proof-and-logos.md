@@ -11,6 +11,9 @@ A logo band right under the hero, static or as a marquee, is a good and common a
 | A few strong customer stories | Logo + testimonial pairs |
 | Press coverage or awards | A press or award row |
 | A big usage number | A stat line, with faces or small logos |
+| People are the product (a studio, a consultant) | Their faces: on the CTA, the contact card, the team section |
+| Work to show | The work itself, in one object treatment (forms below) |
+| A true, current fact (open slots, days left) | A specific number tied to the customer |
 | Nothing yet | Show the product working; skip proof rather than fake it |
 
 ## Forms
@@ -28,6 +31,11 @@ A logo band right under the hero, static or as a marquee, is a good and common a
 | **Press or award row** | "As seen in" outlets, or award badges | Notable recognition; adds more prestige than generic client logos |
 | **Near the CTA or pricing** | The strongest proof placed beside the final CTA or the pricing cards, where hesitation is highest | Every conversion page; pairs with any form above |
 | **Pre-footer** | A quiet logo row just above the footer | When the top of the page is better spent on the product |
+| **Work as objects** | Every client's work gets the same object treatment and lighting: 3D keychains, packaged products on a shelf, packaging on a CRT | Studios and agencies with mixed portfolios; one treatment makes very different brands read as one collection (`brandappart/`, `seen-advertising/`, `brethren-design-co/`) |
+| **Proof attached to the claim** | A customer quote beside each feature, a testimonial card inside the work grid, a quote card over the customer's own photo | When you have specific quotes; proof sits where the claim is made (`hex/`, `brandappart/`, `colabs/`) |
+| **Proof as an interaction** | A backers list where the hovered row lights up and shows its logo; fanned testimonial cards like a hand of cards; testimonial tabs with a progress line | Many names or several stories in little space (`zentry/`, `brandappart/`, `mugen-studio/`) |
+| **True, specific numbers** | A number about the customer or right now: "276 days till the next season", "2 slots open March'26", a category list with counts | Instead of a stat wall. Only numbers you can keep true (`fc88/`, `mugen-studio/`, `trifecta/`, `nocodesupply/`) |
+| **Faces on the CTA** | The founders' or the contact person's photo inside the CTA button or card: "LET'S DO WORK" with both founders, "Book a 30-Min Call with Jessica" | Selling people's time; the face is the proof (`brethren-design-co/`, `brandappart/`, `trifecta/`, `mugen-studio/`) |
 
 ## Rules
 
@@ -36,6 +44,7 @@ A logo band right under the hero, static or as a marquee, is a good and common a
 - **Logos over names** (core principle 3), but never logos nobody knows.
 - **Moving logos need a pause control** and a static reduced-motion version (`accessibility.md`).
 - **Testimonials stay short and outcome-based**: time, money or effort saved.
+- **Stat walls are the weak default.** In the creative set, where sites used a grid of big numbers they were the weakest part of the page (`zentry/`, `mugen-studio/`, `trifecta/`). Prefer one true number in context.
 - Pick the form during the wireframe (`identity-and-site-building.md`, step 3), not after.
 
 ## Sources
@@ -46,3 +55,4 @@ A logo band right under the hero, static or as a marquee, is a good and common a
 - Spotlight logo reveal: https://www.framer.com/community/marketplace/components/torch-logo-reveal/
 - One proof type per section: https://siteliftmedia.com/news/use-social-proof-web-design-without-clutter
 - Stripe logo bar treatment (uniform size, grayscale): https://uirip.pages.dev/blog/teardowns/stripe
+- Creative sites set (captured 2026-11-05): `../examples/creative-sites-patterns.md`, sections 7 and 8

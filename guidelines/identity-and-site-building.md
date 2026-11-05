@@ -23,17 +23,17 @@ This is the workflow for every project: no website or app is without a brand, wh
 
 The order matters less than doing the work. The default is **identity first**, so the flow and the wireframe are built on the identity rather than the identity bent to fit the wireframe.
 
-There are **two validation gates**: the user approves the plan (Step 0) and the brand identity folder (end of Step 1) before any page gets built. Don't skip them to save time; rebuilding a finished site on the wrong identity costs far more.
+There are **two validation gates**: the user picks a direction (Step 0) and approves the brand identity folder (end of Step 1) before any page gets built. Don't skip them to save time; rebuilding a finished site on the wrong identity costs far more.
 
 **When to skip:**
 - The first prompt already answers the setup questions: skip the questions and go straight to the proposal.
-- The user says to build straight away: skip both gates and build. List the choices you made (palette, type, hero motion, proof, nav, footer) at the end so they can change them.
+- The user says to build straight away: skip both gates, pick the direction that fits the role best and build it. List the choices you made (palette, type, hero motion, proof, nav, footer) and the other directions in two lines each at the end so they can switch.
 
 ### Step 0: Ask, research, propose
 
 **New project.** Ask in one round, multiple choice where possible, so the user answers quickly:
 
-1. What is the product, who is it for, and what is the one action the page should get?
+1. What is the product, who is it for, and what is the one action the page should get? (This is the site's role in the business, `design-directions.md`.)
 2. Three words for the feeling (e.g. warm, precise, playful).
 3. Sites they like and dislike, and why.
 4. Existing assets: logo, colors, fonts, photos, product screenshots.
@@ -42,13 +42,17 @@ There are **two validation gates**: the user approves the plan (Step 0) and the 
 7. Motion appetite: calm, expressive, or somewhere between.
 8. Constraints: stack, font licenses, languages, accessibility needs, deadline.
 
-Then **research** the product's world and category: its real environment, competitors, and the palette of the item or service (`color.md`, research the palette). Then **propose the build** and wait for a yes:
+Then **research** the product's world and category: its real environment, competitors, and the palette of the item or service (`color.md`, research the palette). Then **propose 2-3 directions** and wait for the user to pick one or mix them (`design-directions.md`). Never a single design. Each direction is a complete, coherent combination chosen by role, mood, style and color:
 
-- 2-3 palette options with their mood, and the type direction.
+- The one idea (metaphor or shape) that ties it together.
+- A palette with its mood, and the type direction.
+- The main material (photo, product UI, 3D, illustration).
 - The hero layout and its scroll technique (`hero-and-scroll-motion.md`).
-- The proof form (`social-proof-and-logos.md`).
-- The nav and footer forms (`navigation-and-footers.md`).
+- The proof form and the CTA (`social-proof-and-logos.md`).
+- The nav, phone menu and footer as a pair (`navigation-and-footers.md`).
 - The section flow, one plain sentence per section, in order (a storyboard of the scroll).
+
+At least one direction changes the layout, not only the colors. When the choice is visual, mock the hero of each in `brand/directions.html`.
 
 **Existing project.** Review it first and be blunt. Give a ranked list in three groups: **keep**, **improve** (what and how) and **remove** (what and why). No hedging, no softening: if the hero is generic or the logo band is dead weight, say so. Then propose the changes and wait for a yes.
 
@@ -56,6 +60,7 @@ Then **research** the product's world and category: its real environment, compet
 
 Escape bright, sterile light modes and flat, typical dark modes.
 
+0. **Write down the direction's one idea** (`design-directions.md`, section 5): the metaphor or shape every label, button, hover and footer will follow.
 1. **Start with a single moody image** that sets the "feeling of the website". Restaurant: crop it, darken it, round the edges, layer it, add some noise, put the brand name on top. That alone brings the whole thing to life.
 2. **Gather a few more images** with the same moody vibe.
 3. **Pull a simple palette from the images** (e.g. earthy tones), plus a few accent colors that go with it. Check the palette matches the product's world (see `color.md`, "Let the color find the website").
@@ -71,6 +76,7 @@ Put the identity in a `brand/` folder and show it to the user **before building 
 
 ```
 brand/
+  directions.html    (Step 0, optional) the hero of each direction side by side
   brand-board.html   one page showing everything below, for review
   moodboard/         the moody image + 4-6 images with the same vibe (with sources)
   palette.md         2-3 options at first, then the chosen one: ramp, neutrals,
@@ -79,7 +85,7 @@ brand/
   imagery/           textures, people, the grade notes
   icons/             feature icons in the accent colors
   logo/              mark and wordmark
-  motion.md          hero technique and the 1-2 repeating motion themes
+  motion.md          hero technique, the 1-2 repeating motion themes, the hover style
   voice.md           the heading, tone, words to avoid
 ```
 
@@ -146,4 +152,5 @@ Removing things doesn't always make a page clearer. Sometimes it just makes it e
 - Elements around the core message (money and invoices on an invoicing site; coins and a character on a crypto site) tell the user what the product is **before they read anything**.
 - For a playful site: doodled illustrations, small "twinkles", a couple of tasteful scribbles.
 - Match the vibe: blobs and fun colors (most playful), doodles (in between), realistic imagery (professional). Gumroad's neo-brutalism is another point on that scale.
+- **A character lives in functional places:** the loader, the menu, empty states, the footer, the 404. Seen's walking receipt is never introduced; it simply lives in the UI (`../examples/seen-advertising/`, `../examples/fc88/`).
 - Finishing touches count: a quirky 404 page is the ultimate place for personality, because the user isn't supposed to be there.

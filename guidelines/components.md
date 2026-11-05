@@ -10,6 +10,17 @@ Upgrades for the elements most often done wrong. Each one improves both the UI a
 - **Image card with gradient** (Apple Music): image at ~3/4 of the card height, a long smooth gradient from the bottom of the image upward, text on top. Only works with some images; the plain image-above-text card always works.
 - Don't nest cards in cards.
 
+## CTAs on brand-led sites
+
+Defaults from the creative set (`../examples/creative-sites-patterns.md`, section 8):
+
+- **Put faces on the CTA when you sell people.** The founders inside the "LET'S DO WORK" pill (`brethren-design-co/`), avatars on "BOOK A CALL" (`brandappart/`), "Book a 30-Min Call with Jessica" (`trifecta/`), a person card with availability as the hero CTA (`mugen-studio/`).
+- **A small fixed CTA pill** at the bottom of the screen instead of repeated banners (`brandappart/`, `brethren-design-co/`). On phone, check it doesn't cover content or the menu.
+- **Two-part buttons** that carry the identity's shape: a label cell joined to an arrow cell (`isomorphic-labs/`), a black arrow circle in a notch (`colabs/`).
+- **Labels in the brand's voice:** "☑ I WANT TO MEET", "GET INTRODUCED" (`fc88/`), "Discover" on a packaged service (`seen-advertising/`). The label still says where it goes.
+- **Forms as sentences:** "Hello, my name is ___ I'm ___ at ___" (`fc88/`). Keep a real `<label>` for each field (`accessibility.md`).
+- **Ask for what you need first.** Lightship's newsletter asks for the zip code, because it announces roadshows near you (`lightship-rv/`).
+
 ## Forms: sign-up and log-in
 
 - **Labels above the inputs, always visible.** Labels inside the empty field disappear mid-typing.
@@ -22,7 +33,7 @@ Upgrades for the elements most often done wrong. Each one improves both the UI a
 
 ## Footers
 
-Default for few links: 3-5 centered links, logo above, socials below, copyright left, credits right. Big multi-column footers only when there are many links. Other forms (CTA, oversized wordmark, reveal, image/video, interactive): `navigation-and-footers.md`.
+Default for few links: 3-5 centered links, logo above, socials below, copyright left, credits right. Big multi-column footers only when there are many links. Other forms (CTA, oversized wordmark, reveal, image/video, brand-color card, taxonomy, the metaphor's ending and more): `navigation-and-footers.md`.
 
 ## Chips
 

@@ -1,6 +1,6 @@
 # Landing Pages
 
-Landing pages aren't about complexity, they're about presentation. Generally, the better the presentation, the better the conversion. For building the identity and the wireframe, use `identity-and-site-building.md`; this file covers section patterns and quality levels.
+Landing pages aren't about complexity, they're about presentation. Generally, the better the presentation, the better the conversion. For building the identity and the wireframe, use `identity-and-site-building.md`; for choosing and combining the 2-3 directions, `design-directions.md`. This file covers section patterns and quality levels.
 
 ## The 5-second test
 
@@ -65,7 +65,7 @@ The hero's scroll motion is chosen per identity from the catalog in `hero-and-sc
 - Give the nav hierarchy: the main action stands out (outline or fill), more important links get dropdowns, and the menu is balanced across the bar.
 - The main CTA and the nav CTA share the same label when they go to the same place.
 - Size the footer to the links you have: 3-5 links get a small centered footer, not a 5-column one copied from Apple or Linear.
-- Other forms (floating pill, sticky on scroll-up, fullscreen overlay, section index; CTA, oversized wordmark, reveal and image footers): `navigation-and-footers.md`.
+- Other forms (floating pill, sticky on scroll-up, fullscreen overlay, section index, icon sidebar with a phone dock, edge tabs, joined cells and more; CTA, oversized wordmark, reveal, image and brand-color card footers): `navigation-and-footers.md`.
 
 ## Making it delightful
 
