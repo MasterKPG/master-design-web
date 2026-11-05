@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sidekick Pictures · Cartoons and comics for brands</title>
+  <meta name="description" content="Sidekick Pictures is a Lisbon studio that turns brands into cartoons and comics: animated ads, brand mascots, branded comics and storyboards.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Shantell+Sans:wght@500..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/kick.svg">
+</head>
+<body>
+  <!-- The mascot, reused in the nav, menu, form success and footer -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="kick" viewBox="0 0 120 140">
+      <path d="M40 54 Q18 92 28 116 L60 102 L92 116 Q102 92 80 54 Z" fill="#FFD43B" stroke="#141118" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M50 104 Q46 118 43 127 M70 104 Q74 118 77 127" fill="none" stroke="#141118" stroke-width="6" stroke-linecap="round"/>
+      <ellipse cx="38" cy="129" rx="11" ry="6" fill="#141118"/>
+      <ellipse cx="82" cy="129" rx="11" ry="6" fill="#141118"/>
+      <path d="M30 74 Q12 82 11 64" fill="none" stroke="#141118" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="11" cy="59" r="7.5" fill="#F2E9D8" stroke="#141118" stroke-width="2.5"/>
+      <g class="kick-wave">
+        <path d="M90 72 Q107 64 105 46" fill="none" stroke="#141118" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="105" cy="41" r="7.5" fill="#F2E9D8" stroke="#141118" stroke-width="2.5"/>
+      </g>
+      <path d="M60 20 C88 20 96 46 94 70 C92 96 78 110 60 110 C42 110 28 96 26 70 C24 46 32 20 60 20 Z" fill="#141118" stroke="#F2E9D8" stroke-width="2"/>
+      <ellipse cx="50" cy="52" rx="8" ry="11.5" fill="#F2E9D8"/>
+      <ellipse cx="70" cy="52" rx="8" ry="11.5" fill="#F2E9D8"/>
+      <ellipse cx="52" cy="56" rx="4" ry="6.5" fill="#141118"/>
+      <ellipse cx="72" cy="56" rx="4" ry="6.5" fill="#141118"/>
+      <circle cx="53.5" cy="53" r="1.4" fill="#F2E9D8"/>
+      <circle cx="73.5" cy="53" r="1.4" fill="#F2E9D8"/>
+      <path d="M44 74 Q60 93 76 74 Q60 81 44 74 Z" fill="#F2E9D8"/>
+    </symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- NAV: a strip of joined comic panels -->
+  <header class="nav" id="nav">
+    <a class="nav__cell nav__logo" href="#top" aria-label="Sidekick Pictures, back to top">
+      <svg class="kick kick--nav" aria-hidden="true"><use href="#kick"/></svg>
+      <span class="wordmark">Sidekick<span> Pictures</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <a class="nav__cell" href="#work">Work <sup>41</sup></a>
+      <a class="nav__cell" href="#services">Services</a>
+      <a class="nav__cell" href="#process">Process</a>
+      <a class="nav__cell" href="#fan-mail">Fan mail</a>
+    </nav>
+    <p class="nav__cell nav__live">
+      <span class="dot" aria-hidden="true"></span>
+      Lisbon <time id="clock">--:--</time><span class="sep" aria-hidden="true">/</span>2 slots open for January
+    </p>
+    <button class="nav__cell nav__pause" id="pauseAll" type="button" aria-pressed="false" aria-label="Pause all videos">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M8 5v14l11-7z"/></svg>
+    </button>
+    <a class="nav__cell nav__cta" href="#start"><span class="btn-label"><span data-text="Start a project">Start a project</span></span></a>
+    <button class="nav__cell nav__menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </header>
+
+  <!-- PHONE MENU: a comic page of big panels -->
+  <div class="menu" id="menu" hidden>
+    <div class="menu__page">
+      <a class="menu__panel" style="--c:var(--yellow)" href="#work">Work <sup>41</sup></a>
+      <a class="menu__panel" style="--c:var(--magenta)" href="#services">Services</a>
+      <a class="menu__panel" style="--c:var(--cyan)" href="#process">Process</a>
+      <a class="menu__panel" style="--c:var(--paper-2)" href="#fan-mail">Fan mail</a>
+      <div class="menu__kick">
+        <svg class="kick kick--menu" aria-hidden="true"><use href="#kick"/></svg>
+        <p class="bubble bubble--left">Pick a panel. Any panel.</p>
+      </div>
+      <a class="btn btn--yellow menu__cta" href="#start"><span class="btn-label"><span data-text="Start a project">Start a project</span></span></a>
+      <p class="menu__live">2 slots open for January · hello@sidekick.pictures</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO: a comic page; the reel panel grows to full bleed on scroll -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__track" id="heroTrack">
+        <div class="hero__stage" id="heroStage">
+          <div class="hero__copy" id="heroCopy">
+            <p class="caption">Animation &amp; comics studio · Lisbon</p>
+            <h1 class="display hero__title" id="hero-title">We turn brands into <em>cartoons</em> &amp; comics.</h1>
+            <p class="hero__sub">Animated spots, brand mascots and comics, made by one crew from the first script to the last frame.</p>
+            <div class="hero__actions">
+              <a class="btn btn--yellow" href="#start"><span class="btn-label"><span data-text="Start a project">Start a project</span></span></a>
+              <a class="btn btn--ghost" href="#reel-end" id="reelLink">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="btn__icon"><path d="M8 5v14l11-7z"/></svg>
+                <span class="btn-label"><span data-text="Watch the reel">Watch the reel</span></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="page" id="heroPage" aria-label="Clips from our reel">
+            <figure class="panel panel--a" data-out="-1,-1">
+              <video muted loop playsinline preload="metadata" poster="assets/video/willie-wheel.jpg" data-src="assets/video/willie-wheel.mp4" aria-hidden="true"></video>
+            </figure>
+            <figure class="panel panel--b" data-out="1,-1">
+              <video muted loop playsinline preload="metadata" poster="assets/video/bugs-dance.jpg" data-src="assets/video/bugs-dance.mp4" aria-hidden="true"></video>
+              <p class="bubble bubble--hero" aria-hidden="true">They make ads too?!</p>
+            </figure>
+            <div class="slot" id="reelSlot" aria-hidden="true"></div>
+            <figure class="panel panel--c" data-out="1,0">
+              <video muted loop playsinline preload="metadata" poster="assets/video/betty-wonder.jpg" data-src="assets/video/betty-wonder.mp4" aria-hidden="true"></video>
+            </figure>
+            <figure class="panel panel--d" data-out="1,1">
+              <video muted loop playsinline preload="metadata" poster="assets/video/popeye-fight.jpg" data-src="assets/video/popeye-fight.mp4" aria-hidden="true"></video>
+            </figure>
+            <figure class="reel" id="reel">
+              <video id="reelVideo" muted loop playsinline preload="metadata" poster="assets/video/reel.jpg" data-src="assets/video/reel.mp4" aria-label="Showreel 2026, 30 seconds, no sound"></video>
+              <div class="reel__frame" aria-hidden="true"></div>
+              <figcaption class="reel__caption" id="reelCaption">
+                <span class="caption">Showreel 2026 · 0:30</span>
+                <span class="display reel__title">14 cuts.<br>Zero boring frames.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <span id="reel-end" class="reel-end" aria-hidden="true"></span>
+    </section>
+
+    <!-- PROOF: client logos as a comic strip of cells -->
+    <section class="strip" aria-label="Clients">
+      <p class="strip__label caption">Drawn for</p>
+      <ul class="strip__cells">
+        <li><img src="assets/logos/duolingo.svg" alt=""><span>Duolingo</span></li>
+        <li><img src="assets/logos/spotify.svg" alt=""><span>Spotify</span></li>
+        <li><img src="assets/logos/redbull.svg" alt=""><span>Red Bull</span></li>
+        <li><img src="assets/logos/airbnb.svg" alt=""><span>Airbnb</span></li>
+        <li><img src="assets/logos/discord.svg" alt=""><span>Discord</span></li>
+        <li><img src="assets/logos/netflix.svg" alt=""><span>Netflix</span></li>
+        <li><img src="assets/logos/headspace.svg" alt=""><span>Headspace</span></li>
+        <li><img src="assets/logos/mailchimp.svg" alt=""><span>Mailchimp</span></li>
+      </ul>
+    </section>
+
+    <!-- WORK: every project as a comic book cover -->
+    <section class="work paper" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <p class="caption caption--ink">Selected work · 6 of 41 projects</p>
+        <h2 class="display h2" id="work-title">Back issues</h2>
+        <p class="lead">Every project gets its own cover, and every cover plays.</p>
+      </div>
+      <ul class="covers">
+        <li class="cover" style="--c:var(--yellow)" data-pop>
+          <div class="cover__mast"><span class="cover__no">No. 41</span><img src="assets/logos/duolingo-ink.svg" alt="Duolingo"><span>2026</span></div>
+          <h3 class="display cover__title">The owl strikes back</h3>
+          <div class="cover__art"><video muted loop playsinline preload="none" poster="assets/video/superman-change.jpg" data-src="assets/video/superman-change.mp4" aria-hidden="true"></video></div>
+          <p class="cover__foot">12 animated shorts · 41M views in the first month</p>
+        </li>
+        <li class="cover" style="--c:var(--cyan)" data-pop>
+          <div class="cover__mast"><span class="cover__no">No. 38</span><img src="assets/logos/spotify-ink.svg" alt="Spotify"><span>2026</span></div>
+          <h3 class="display cover__title">Wrapped: the comic</h3>
+          <div class="cover__art"><img src="assets/art/nemo-1907-sm.jpg" alt="A colored comic page of a boy climbing between skyscrapers" loading="lazy"></div>
+          <p class="cover__foot">24-page scroll comic · read 6.2M times</p>
+        </li>
+        <li class="cover" style="--c:var(--magenta)" data-pop>
+          <div class="cover__mast"><span class="cover__no">No. 35</span><img src="assets/logos/redbull-ink.svg" alt="Red Bull"><span>2025</span></div>
+          <h3 class="display cover__title">Gives you panels</h3>
+          <div class="cover__art"><video muted loop playsinline preload="none" poster="assets/video/popeye-fight.jpg" data-src="assets/video/popeye-fight.mp4" aria-hidden="true"></video></div>
+          <p class="cover__foot">Mascot + 8 episodes for the summer tour</p>
+        </li>
+        <li class="cover" style="--c:var(--cyan)" data-pop>
+          <div class="cover__mast"><span class="cover__no">No. 31</span><img src="assets/logos/airbnb-ink.svg" alt="Airbnb"><span>2025</span></div>
+          <h3 class="display cover__title">The night the city flooded</h3>
+          <div class="cover__art"><video muted loop playsinline preload="none" poster="assets/video/quake-dive.jpg" data-src="assets/video/quake-dive.mp4" aria-hidden="true"></video></div>
+          <p class="cover__foot">Host safety comic · 18% fewer support tickets</p>
+        </li>
+        <li class="cover" style="--c:var(--magenta)" data-pop>
+          <div class="cover__mast"><span class="cover__no">No. 27</span><img src="assets/logos/discord-ink.svg" alt="Discord"><span>2025</span></div>
+          <h3 class="display cover__title">Server squad</h3>
+          <div class="cover__art"><video muted loop playsinline preload="none" poster="assets/video/bugs-hat.jpg" data-src="assets/video/bugs-hat.mp4" aria-hidden="true"></video></div>
+          <p class="cover__foot">3 mascots · 140 stickers · 1 theme song</p>
+        </li>
+        <li class="cover" style="--c:var(--yellow)" data-pop>
+          <div class="cover__mast"><span class="cover__no">No. 22</span><img src="assets/logos/headspace-ink.svg" alt="Headspace"><span>2024</span></div>
+          <h3 class="display cover__title">Lost in orbit</h3>
+          <div class="cover__art"><video muted loop playsinline preload="none" poster="assets/video/felix-space.jpg" data-src="assets/video/felix-space.mp4" aria-hidden="true"></video></div>
+          <p class="cover__foot">8 bedtime shorts, hand-drawn in black and white</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SERVICES: a comic page, one color per service -->
+    <section class="services paper" id="services" aria-labelledby="services-title">
+      <div class="section-head">
+        <p class="caption caption--ink">Four things we draw</p>
+        <h2 class="display h2" id="services-title">Pick your format</h2>
+      </div>
+      <div class="spage">
+        <article class="spanel spanel--ads" style="--c:var(--yellow)" data-pop>
+          <div class="spanel__art"><video muted loop playsinline preload="none" poster="assets/video/willie-wheel.jpg" data-src="assets/video/willie-wheel.mp4" aria-hidden="true"></video></div>
+          <div class="spanel__text">
+            <p class="tag">01 · From €12k</p>
+            <h3 class="display h3">Animated ads &amp; explainers</h3>
+            <p>15 to 90 second spots for social, TV and launches, with sound design and every cutdown you need.</p>
+          </div>
+        </article>
+        <article class="spanel spanel--mascot" style="--c:var(--magenta)" data-pop>
+          <div class="spanel__art"><video muted loop playsinline preload="none" poster="assets/video/bugs-dance.jpg" data-src="assets/video/bugs-dance.mp4" aria-hidden="true"></video></div>
+          <div class="spanel__text">
+            <p class="tag">02 · From €8k</p>
+            <h3 class="display h3">Brand mascots</h3>
+            <p>A character people remember, delivered with turnarounds, expressions and a style guide.</p>
+          </div>
+        </article>
+        <article class="spanel spanel--comics" style="--c:var(--cyan)" data-pop>
+          <div class="spanel__art"><img src="assets/art/nemo-1907-sm.jpg" alt="Comic page with panels of a city at night" loading="lazy"></div>
+          <div class="spanel__text">
+            <p class="tag">03 · From €6k</p>
+            <h3 class="display h3">Branded comics</h3>
+            <p>Print issues, scroll comics and weekly strips for your feed.</p>
+          </div>
+        </article>
+        <article class="spanel spanel--boards" style="--c:var(--paper-2)" data-pop>
+          <div class="spanel__art"><img src="assets/art/nemo-pole-sm.jpg" alt="Original black ink comic page with handwritten notes in the margins" loading="lazy"></div>
+          <div class="spanel__text">
+            <p class="tag">04 · From €3k</p>
+            <h3 class="display h3">Storyboards &amp; animatics</h3>
+            <p>Boards your agency can pitch with, drawn in days so the idea sells before it's made.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS: a four-panel strip, from ink to color -->
+    <section class="process ink" id="process" aria-labelledby="process-title">
+      <div class="section-head">
+        <p class="caption">Origin story</p>
+        <h2 class="display h2" id="process-title">Blank page to final frame in 6 to 10 weeks</h2>
+      </div>
+      <ol class="pstrip">
+        <li class="ppanel" data-pop>
+          <p class="caption">Week 1</p>
+          <div class="ppanel__art"><img src="assets/art/nemo-pole-sm.jpg" alt="" loading="lazy" style="object-position:50% 8%"></div>
+          <h3 class="h4">Script &amp; thumbnails</h3>
+          <p>One workshop with your team, then a script and rough panels you can mark up.</p>
+        </li>
+        <li class="ppanel" data-pop>
+          <p class="caption">Weeks 2-3</p>
+          <div class="ppanel__art"><img src="assets/art/nemo-1907-sm.jpg" alt="" loading="lazy" style="object-position:30% 45%"></div>
+          <h3 class="h4">Characters &amp; style</h3>
+          <p>Designs, color keys and the look of every scene, signed off before we animate.</p>
+        </li>
+        <li class="ppanel" data-pop>
+          <p class="caption">Weeks 4-5</p>
+          <div class="ppanel__art"><video muted loop playsinline preload="none" poster="assets/video/felix-crowd.jpg" data-src="assets/video/felix-crowd.mp4" aria-hidden="true"></video></div>
+          <h3 class="h4">Animatic</h3>
+          <p>The whole film in timed sketches with a temp voice, so changes stay cheap.</p>
+        </li>
+        <li class="ppanel" data-pop>
+          <p class="caption">Weeks 6-10</p>
+          <div class="ppanel__art"><video muted loop playsinline preload="none" poster="assets/video/quake-pose.jpg" data-src="assets/video/quake-pose.mp4" aria-hidden="true"></video></div>
+          <h3 class="h4">Animation &amp; delivery</h3>
+          <p>Ink, color, sound and every format, from 9:16 to cinema.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- FAN MAIL: testimonials as speech bubbles -->
+    <section class="fan paper" id="fan-mail" aria-labelledby="fan-title">
+      <div class="section-head">
+        <p class="caption caption--ink">Fan mail</p>
+        <h2 class="display h2" id="fan-title">What clients wrote back</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote quote--big" data-pop>
+          <blockquote class="bubble bubble--quote">
+            <p>Our twelve shorts did 41 million views in a month. People are still asking for a thirteenth.</p>
+          </blockquote>
+          <figcaption class="speaker">
+            <img class="halftone" src="assets/people/women-44.jpg" alt="">
+            <span><strong>Maya Okafor</strong>Brand lead</span>
+            <img class="speaker__logo" src="assets/logos/duolingo-ink.svg" alt="Duolingo">
+          </figcaption>
+        </figure>
+        <figure class="quote" data-pop>
+          <blockquote class="bubble bubble--quote">
+            <p>They designed the mascot in three weeks. It's on every tour truck now.</p>
+          </blockquote>
+          <figcaption class="speaker">
+            <img class="halftone" src="assets/people/men-32.jpg" alt="">
+            <span><strong>Tomás Reyes</strong>Creative director</span>
+            <img class="speaker__logo" src="assets/logos/redbull-ink.svg" alt="Red Bull">
+          </figcaption>
+        </figure>
+        <figure class="quote" data-pop>
+          <blockquote class="bubble bubble--quote">
+            <p>The comic explained hosting better than our six-page guide. Support tickets dropped 18%.</p>
+          </blockquote>
+          <figcaption class="speaker">
+            <img class="halftone" src="assets/people/women-68.jpg" alt="">
+            <span><strong>Inês Duarte</strong>Content lead</span>
+            <img class="speaker__logo" src="assets/logos/airbnb-ink.svg" alt="Airbnb">
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CTA: heavy left-aligned type over a full-bleed clip, a sentence form, faces on the button -->
+    <section class="cta" id="start" aria-labelledby="cta-title">
+      <video class="cta__bg" muted loop playsinline preload="none" poster="assets/video/superman-pose.jpg" data-src="assets/video/superman-pose.mp4" aria-hidden="true"></video>
+      <div class="cta__inner">
+        <p class="caption">2 slots open for January 2027</p>
+        <h2 class="display cta__title" id="cta-title">Got a story?<br>We'll draw it.</h2>
+        <form class="sform" id="sform" novalidate>
+          <p class="sform__line">
+            Hi, we're
+            <label class="sr-only" for="f-brand">Brand name</label>
+            <input class="field" id="f-brand" name="brand" type="text" placeholder="your brand" autocomplete="organization" required aria-describedby="err-brand">
+            and we'd like
+            <label class="sr-only" for="f-what">What you need</label>
+            <select class="field" id="f-what" name="what">
+              <option>an animated ad</option>
+              <option>a brand mascot</option>
+              <option>a branded comic</option>
+              <option>storyboards</option>
+              <option>a bit of everything</option>
+            </select>
+            by
+            <label class="sr-only" for="f-when">Deadline</label>
+            <select class="field" id="f-when" name="when">
+              <option>January</option><option>February</option><option selected>March</option><option>April</option><option>May</option><option>June</option><option>later this year</option>
+            </select>.
+            Reply to
+            <label class="sr-only" for="f-email">Email</label>
+            <input class="field field--email" id="f-email" name="email" type="email" placeholder="you@brand.com" autocomplete="email" required aria-describedby="err-email">
+          </p>
+          <p class="sform__error" id="err-brand" role="alert"></p>
+          <p class="sform__error" id="err-email" role="alert"></p>
+          <div class="sform__row">
+            <button class="btn btn--yellow btn--faces" type="submit" id="sendBtn">
+              <span class="faces" aria-hidden="true"><img src="assets/people/women-90.jpg" alt=""><img src="assets/people/men-75.jpg" alt=""></span>
+              <span class="btn-label"><span data-text="Start a project">Start a project</span></span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <p class="sform__note">Lina or Omar replies within one working day.</p>
+          </div>
+        </form>
+        <div class="sent" id="sent" hidden tabindex="-1">
+          <svg class="kick kick--sent" aria-hidden="true"><use href="#kick"/></svg>
+          <p class="bubble bubble--left" id="sentText">Got it! Lina will reply by tomorrow, 18:00 Lisbon time.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: the last panel, cells that match the nav -->
+  <footer class="foot paper">
+    <div class="foot__end">
+      <p class="display foot__the-end">The end.</p>
+      <div class="foot__kick">
+        <p class="bubble bubble--right">Or is it? New issue every Tuesday on Instagram.</p>
+        <svg class="kick kick--foot" aria-hidden="true"><use href="#kick"/></svg>
+      </div>
+    </div>
+    <div class="foot__cells">
+      <div class="fcell fcell--wide">
+        <p class="fcell__h">Sidekick Pictures</p>
+        <p>Rua da Rosa 112, Lisbon<br><a href="mailto:hello@sidekick.pictures">hello@sidekick.pictures</a></p>
+      </div>
+      <nav class="fcell" aria-label="Footer">
+        <p class="fcell__h">Read</p>
+        <a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#fan-mail">Fan mail</a>
+      </nav>
+      <div class="fcell">
+        <p class="fcell__h">Follow</p>
+        <a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Behance</a>
+      </div>
+      <a class="fcell fcell--cta" href="#start"><span class="fcell__h">2 slots open for January</span><span class="display">Start a project</span></a>
+    </div>
+    <p class="foot__word display" aria-hidden="true">Sidekick</p>
+    <div class="foot__legal">
+      <span>© 2026 Sidekick Pictures</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+      <span>Test build. Footage and comic pages: public-domain films and strips via Wikimedia Commons. Client logos via Simple Icons.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

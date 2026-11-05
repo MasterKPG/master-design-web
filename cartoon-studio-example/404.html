@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wrong panel · Sidekick Pictures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Shantell+Sans:wght@500..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/kick.svg">
+  <style>
+    .lost { min-height: 100svh; display: grid; place-items: center; padding: var(--pad); }
+    .lost__page { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gutter); width: min(900px, 100%); }
+    .lost__panel { border: var(--line) solid var(--ink); box-shadow: var(--drop); background: var(--paper); min-height: 260px; padding: 24px; display: grid; align-content: end; gap: 16px; }
+    .lost__panel--kick { background: var(--yellow); place-items: center; align-content: center; }
+    .lost__panel--wide { grid-column: 1 / -1; min-height: 0; grid-template-columns: 1fr auto; align-items: center; }
+    .lost img { width: 150px; }
+    @media (max-width: 600px) { .lost__page { grid-template-columns: 1fr; } .lost__panel--wide { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="paper">
+  <main class="lost">
+    <div class="lost__page">
+      <div class="lost__panel"><p class="caption caption--ink">Meanwhile, on page 404</p><h1 class="display h2">Wrong panel.</h1></div>
+      <div class="lost__panel lost__panel--kick"><img src="assets/kick.svg" alt="The Sidekick mascot, shrugging"><p class="bubble bubble--left">I drew this page blank on purpose. Honest.</p></div>
+      <div class="lost__panel lost__panel--wide"><p style="margin:0">The page you wanted isn't in this issue.</p><a class="btn btn--yellow" href="index.html"><span class="btn-label"><span data-text="Back to the cover">Back to the cover</span></span></a></div>
+    </div>
+  </main>
+</body>
+</html>

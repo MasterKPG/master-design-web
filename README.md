@@ -34,6 +34,16 @@ Each example below was made from a single prompt. They're grouped by the release
 
 **[See the live page →](https://masterkpg.github.io/master-design-web/luxury-car-rental-example/)** · [source](luxury-car-rental-example/)
 
+### [v3](https://github.com/MasterKPG/master-design-web/releases/tag/v3)
+
+#### "Build a landing page for a finance law firm in new york."
+
+**[See the live page →](https://masterkpg.github.io/master-design-web/finance-law-firm-example/)** · [source](finance-law-firm-example/)
+
+#### "build me a cartoon/comics making studio landing page."
+
+**[See the live page →](https://masterkpg.github.io/master-design-web/cartoon-studio-example/)** · [source](cartoon-studio-example/)
+
 ## Structure
 
 ```
